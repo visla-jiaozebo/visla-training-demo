@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>卡布奇诺 · 交互编辑</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #241b16; background: #f5f1ec; font: 15px/1.5 system-ui, sans-serif; }
+    header { display: flex; align-items: center; gap: 16px; padding: 12px 20px; background: white; }
+    h1 { margin: 0; font-size: 22px; }
+    h2 { margin: 0 0 12px; font-size: 18px; }
+    button, input, textarea, select { font: inherit; }
+    button { padding: 7px 10px; border: 1px solid #ccc; border-radius: 6px; cursor: pointer; }
+    button.primary { background: #6d3825; color: white; }
+    button:disabled { opacity: .45; cursor: default; }
+    .layout { display: grid; grid-template-columns: 170px minmax(320px, 1fr) minmax(340px, 1fr); gap: 12px; padding: 12px; }
+    nav, .panel { background: white; padding: 14px; border-radius: 8px; min-width: 0; }
+    nav button { display: block; width: 100%; text-align: left; margin-bottom: 6px; }
+    nav button[aria-current="true"] { border: 2px solid #6d3825; background: #f6ebe4; }
+    label { display: block; margin: 10px 0; }
+    input:not([type="radio"]), textarea, select { width: 100%; padding: 7px; border: 1px solid #bbb; border-radius: 5px; }
+    textarea { min-height: 70px; }
+    fieldset { padding: 0; margin: 0; border: 0; }
+    .option { display: grid; grid-template-columns: 22px 1fr 140px 40px; align-items: center; gap: 6px; margin: 8px 0; }
+    iframe { width: 100%; height: 78vh; border: 0; }
+    #status { color: #6d3825; font-size: 13px; }
+    :focus-visible { outline: 3px solid #1681c4; outline-offset: 2px; }
+    @media (max-width: 1000px) { .layout { grid-template-columns: 150px 1fr; } .preview { grid-column: 1 / -1; } }
+    @media (max-width: 600px) { .layout { display: block; } .panel, nav { margin-bottom: 12px; } .option { grid-template-columns: 22px 1fr; } header { flex-wrap: wrap; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1>卡布奇诺 · 交互编辑</h1>
+  <button id="save" class="primary" disabled>保存并预览</button>
+  <button id="export-scorm" disabled>导出 SCORM</button>
+  <span id="status" role="status"></span>
+</header>
+<main class="layout">
+  <nav aria-label="Scene 列表"><div id="scene-list"></div></nav>
+  <section class="panel">
+    <h2 id="selected-scene"></h2>
+    <fieldset id="fields" disabled>
+      <label>后续场景 <select id="scene-next"></select></label>
+      <button id="add-quiz" type="button">添加问题</button>
+      <button id="remove-quiz" type="button" hidden>删除问题</button>
+      <div id="quiz-editor" hidden>
+        <label>类型 <select id="quiz-type"><option value="graded">单选测验</option><option value="branch">分支选择</option></select></label>
+        <label>问题 <textarea id="question" maxlength="1000"></textarea></label>
+        <div id="options"></div>
+        <button id="add-option" type="button">添加选项</button>
+      </div>
+    </fieldset>
+  </section>
+  <section class="panel preview">
+    <h2>预览</h2>
+    <iframe id="preview" title="交互预览"></iframe>
+  </section>
+</main>
+<script src="course-model.js"></script>
+<script src="scorm-zip.js"></script>
+<script src="editor.js"></script>
+</body>
+</html>

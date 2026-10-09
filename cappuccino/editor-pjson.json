@@ -1,0 +1,153 @@
+{
+  "projectUuid": "cappuccino-demo",
+  "training": {
+    "version": 1,
+    "title": "制作卡布奇诺",
+    "passPercent": 67
+  },
+  "scenes": [
+    {
+      "sceneUuid": "scene-1",
+      "name": "Scene 1",
+      "transcript": {
+        "originalVoiceover": "Most cappuccinos fail in the milk. Fix that, and everything gets easier. A cappuccino is all about balance."
+      },
+      "training": {
+        "next": "next"
+      }
+    },
+    {
+      "sceneUuid": "scene-2",
+      "name": "Scene 2",
+      "transcript": {
+        "originalVoiceover": "Start with a fresh dose of coffee beans. Grind fine, but not powdery."
+      },
+      "training": {
+        "next": "next"
+      }
+    },
+    {
+      "sceneUuid": "scene-3",
+      "name": "Scene 3",
+      "transcript": {
+        "originalVoiceover": "Distribute the grounds evenly, then tamp level and steady. Pull your espresso to a simple 1:2 ratio, around 25 to 30 seconds, so it stays bold and sweet."
+      },
+      "training": {
+        "next": "next",
+        "quiz": {
+          "id": "question-3",
+          "title": "咖啡粉应磨成什么状态？",
+          "graded": true,
+          "correct": 0,
+          "feedback": "使用新鲜咖啡豆，研磨细但不要呈粉末状。",
+          "options": [
+            {
+              "text": "细，但不是粉末状",
+              "target": "default"
+            },
+            {
+              "text": "越粗越好",
+              "target": "default"
+            },
+            {
+              "text": "潮湿结块",
+              "target": "default"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sceneUuid": "scene-4",
+      "name": "Scene 4",
+      "transcript": {
+        "originalVoiceover": "Now steam the milk. Add a little air at first, then keep it spinning until it turns glossy and smooth, like wet paint."
+      },
+      "training": {
+        "next": "next"
+      }
+    },
+    {
+      "sceneUuid": "scene-5",
+      "name": "Scene 5",
+      "transcript": {
+        "originalVoiceover": "Stop around 140 to 149 degrees Fahrenheit. Pour right away."
+      },
+      "training": {
+        "next": "next",
+        "quiz": {
+          "id": "question-5",
+          "title": "本教程推荐的牛奶停止加热温度是多少？",
+          "graded": true,
+          "correct": 1,
+          "feedback": "在 140–149°F 左右停止，并立即倒奶。",
+          "options": [
+            {
+              "text": "100–110°F",
+              "target": "default"
+            },
+            {
+              "text": "140–149°F",
+              "target": "default"
+            },
+            {
+              "text": "180–190°F",
+              "target": "default"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sceneUuid": "scene-6",
+      "name": "Scene 6",
+      "transcript": {
+        "originalVoiceover": "Start high to blend the milk and espresso, then lower the pitcher to finish with a soft layer of foam."
+      },
+      "training": {
+        "next": "next"
+      }
+    },
+    {
+      "sceneUuid": "scene-7",
+      "name": "Scene 7",
+      "transcript": {
+        "originalVoiceover": "When done well, you get three things in one cup: rich espresso, silky milk, and a velvety cap."
+      },
+      "training": {
+        "next": "next",
+        "quiz": {
+          "id": "question-7",
+          "title": "如何完成倒奶？",
+          "graded": true,
+          "correct": 1,
+          "feedback": "先从高处倒入混合，再降低奶缸完成。",
+          "options": [
+            {
+              "text": "一直保持奶缸在高处",
+              "target": "default"
+            },
+            {
+              "text": "降低奶缸，形成柔软的奶泡层",
+              "target": "default"
+            },
+            {
+              "text": "等牛奶冷却再倒",
+              "target": "default"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sceneUuid": "scene-8",
+      "name": "Scene 8",
+      "transcript": {
+        "originalVoiceover": "That’s cappuccino, every time."
+      },
+      "training": {
+        "next": "end"
+      }
+    }
+  ]
+}

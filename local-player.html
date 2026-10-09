@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>本地 SCORM 1.2 测试播放器</title>
+  <style>
+    body { margin: 0; font: 15px/1.5 system-ui, sans-serif; }
+    header { padding: 12px 18px; background: #eee; }
+    button { margin-right: 8px; padding: 7px; }
+    .layout { display: grid; grid-template-columns: 2fr 1fr; }
+    iframe { width: 100%; height: 80vh; border: 0; }
+    aside { padding: 12px; overflow: auto; height: 80vh; }
+    pre { white-space: pre-wrap; word-break: break-word; }
+    .compact header, .compact aside { display: none; }
+    .compact .layout { display: block; }
+    .compact iframe { height: 100vh; }
+    @media (max-width: 800px) { .layout { grid-template-columns: 1fr; } }
+  </style>
+  <script>
+    if (new URLSearchParams(location.search).get('compact') === '1') document.documentElement.classList.add('compact');
+  </script>
+</head>
+<body>
+<header>
+  <strong>本地 SCORM 1.2 测试播放器</strong>
+  <button id="relaunch">退出并重新启动（测试恢复）</button>
+  <button id="reset">清除记录，开始新尝试</button>
+  <a href="editor.html" target="_blank" rel="noopener">打开 PJSON 课程编辑器</a>
+</header>
+<div class="layout">
+  <iframe id="course" title="卡布奇诺课程"></iframe>
+  <aside><h2>已提交到模拟 LMS 的数据</h2><pre id="data"></pre><h2>API 调用</h2><pre id="log"></pre></aside>
+</div>
+<script>
+  const courseKey = new URLSearchParams(location.search).get('course');
+  const key = 'visla-cappuccino-scorm12-local' + (courseKey ? `:${courseKey}` : '');
+  const initial = () => ({
+    'cmi.core.student_id': 'local-learner',
+    'cmi.core.student_name': 'Local Learner',
+    'cmi.core.lesson_status': 'not attempted',
+    'cmi.core.lesson_location': '',
+    'cmi.suspend_data': '',
+    'cmi.core.exit': ''
+  });
+  let committed;
+  try { committed = JSON.parse(localStorage.getItem(key)) || initial(); }
+  catch (_) { committed = initial(); }
+  let data = { ...committed }, active = false, error = '0';
+  const calls = [];
+  const errors = { '0': 'No error', '101': 'General exception', '201': 'Invalid argument',
+    '301': 'Not initialized', '401': 'Not implemented', '403': 'Element is read only', '405': 'Incorrect data type' };
+  const count = () => new Set(Object.keys(data).filter(k => /^cmi\.interactions\.\d+\.id$/.test(k)).map(k => k.split('.')[2])).size;
+  function record(method, args, value) {
+    calls.push({ method, args, value, error });
+    document.querySelector('#log').textContent = calls.slice(-100).map(c => `${c.method}(${c.args.map(JSON.stringify).join(', ')}) = ${JSON.stringify(c.value)} [${c.error}]`).join('\n');
+    document.querySelector('#data').textContent = JSON.stringify(committed, null, 2);
+    return value;
+  }
+  function persist() {
+    committed = { ...data };
+    localStorage.setItem(key, JSON.stringify(committed));
+  }
+  window.API = {
+    LMSInitialize(arg) {
+      error = arg !== '' ? '201' : active ? '101' : '0';
+      if (error === '0') active = true;
+      return record('LMSInitialize', [arg], error === '0' ? 'true' : 'false');
+    },
+    LMSGetValue(k) {
+      error = active ? '0' : '301';
+      let value = '';
+      if (error === '0') {
+        if (k === 'cmi.interactions._count') value = String(count());
+        else if (k === 'cmi.core.entry') value = committed['cmi.core.exit'] === 'suspend' ? 'resume' : 'ab-initio';
+        else if (k in data) value = data[k];
+        else error = '401';
+      }
+      return record('LMSGetValue', [k], value);
+    },
+    LMSSetValue(k, v) {
+      error = active ? '0' : '301';
+      if (error === '0') {
+        const match = /^cmi\.interactions\.(\d+)\.(id|type|student_response|result|weighting|time|correct_responses\.0\.pattern)$/.exec(k);
+        const core = ['cmi.core.lesson_status', 'cmi.core.lesson_location', 'cmi.suspend_data', 'cmi.core.exit',
+          'cmi.core.score.raw', 'cmi.core.score.min', 'cmi.core.score.max', 'cmi.core.session_time'];
+        if (!match && !core.includes(k)) error = '401';
+        else if (typeof v !== 'string') error = '405';
+        else if (k === 'cmi.core.lesson_status' && !['passed', 'completed', 'failed', 'incomplete', 'browsed', 'not attempted'].includes(v)) error = '405';
+        else if (k === 'cmi.core.exit' && !['', 'suspend', 'logout', 'time-out'].includes(v)) error = '405';
+        else if (k === 'cmi.suspend_data' && v.length > 4096) error = '405';
+        else if (k.startsWith('cmi.core.score.') && (!Number.isFinite(Number(v)) || v === '')) error = '405';
+        else if (match && Number(match[1]) > count()) error = '201';
+        else if (match && match[2] !== 'id' && !data[`cmi.interactions.${match[1]}.id`]) error = '201';
+        else if (match && match[2] === 'student_response' && !/^[a-z0-9]([,][a-z0-9])*$/.test(v)) error = '405';
+        else if (match && match[2] === 'result' && !['correct', 'wrong', 'unanticipated', 'neutral'].includes(v)) error = '405';
+        if (error === '0') data[k] = v;
+      }
+      return record('LMSSetValue', [k, v], error === '0' ? 'true' : 'false');
+    },
+    LMSCommit(arg) {
+      error = !active ? '301' : arg !== '' ? '201' : '0';
+      if (error === '0') persist();
+      return record('LMSCommit', [arg], error === '0' ? 'true' : 'false');
+    },
+    LMSFinish(arg) {
+      error = !active ? '301' : arg !== '' ? '201' : '0';
+      if (error === '0') { persist(); active = false; }
+      return record('LMSFinish', [arg], error === '0' ? 'true' : 'false');
+    },
+    LMSGetLastError() { return error; },
+    LMSGetErrorString(code) { return errors[code] || 'Unknown error'; },
+    LMSGetDiagnostic(code) { return errors[code || error] || 'Unknown error'; }
+  };
+  function closeCourse() {
+    const child = document.querySelector('#course').contentWindow;
+    child.dispatchEvent(new Event('pagehide'));
+  }
+  function launch() {
+    active = false;
+    data = { ...committed };
+    document.querySelector('#course').src = courseKey
+      ? `interactive-player.html?course=${encodeURIComponent(courseKey)}`
+      : 'interactive-player.html';
+    document.querySelector('#data').textContent = JSON.stringify(committed, null, 2);
+  }
+  document.querySelector('#relaunch').onclick = () => { closeCourse(); launch(); };
+  document.querySelector('#reset').onclick = () => {
+    closeCourse();
+    committed = initial();
+    localStorage.setItem(key, JSON.stringify(committed));
+    launch();
+  };
+  launch();
+</script>
+</body>
+</html>

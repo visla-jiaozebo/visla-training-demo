@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Visla 交互课程</title>
+  <link rel="stylesheet" href="cappuccino/style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1 id="course-title">正在加载课程…</h1>
+    <p id="course-rule"></p>
+    <p id="lms-status" role="status"></p>
+  </header>
+  <section class="panel" aria-labelledby="scene-title">
+    <h2 id="scene-title"></h2>
+    <video id="video" controls playsinline preload="metadata" aria-label="课程视频"></video>
+    <p id="media-status" role="status"></p>
+    <p id="narration"></p>
+    <div class="controls">
+      <button id="prev" type="button" disabled>Previous scene</button>
+      <span id="progress" aria-live="polite"></span>
+      <button id="next" type="button" disabled>Next scene</button>
+    </div>
+    <section id="quiz" hidden aria-live="polite">
+      <h2 id="question"></h2>
+      <div id="answers"></div>
+      <p id="feedback" role="status"></p>
+      <button id="continue" type="button" disabled>Continue lesson</button>
+    </section>
+    <section id="result" hidden role="status">
+      <h2>课程结果</h2>
+      <p id="score"></p>
+      <button id="retry" type="button">Retry</button>
+    </section>
+    <details><summary>播放事件</summary><pre id="events"></pre></details>
+  </section>
+</main>
+<script src="course-model.js"></script>
+<script src="interactive-player.js"></script>
+</body>
+</html>
