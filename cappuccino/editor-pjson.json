@@ -1,0 +1,4481 @@
+{
+  "code": 0,
+  "msg": "SUCCESS",
+  "trackingId": "1e2042202f2beab55886e72ae3d036e1",
+  "data": {
+    "projectUuid": "1558050418641130057",
+    "creationTemplate": "idea-to-video",
+    "ownerUuid": "976789276857466880",
+    "bgms": [
+      {
+        "timelineUuid": "1558051637661081600",
+        "timeOffsetInProject": 0,
+        "duration": 50368,
+        "assetUuid": "1558051637547835392",
+        "chorusStart": 65162,
+        "chorusEnd": 103605,
+        "tailSilence": 0,
+        "mixed": {
+          "intro": true,
+          "outro": true,
+          "chorusLoop": true,
+          "autoDucking": true
+        },
+        "volume": 0.5
+      }
+    ],
+    "scenes": [
+      {
+        "sceneUuid": "1558051634997698560",
+        "segmentUuid": "1558051635031252992",
+        "projectUuid": "1558050418641130057",
+        "name": "Scene 1",
+        "sceneType": "default",
+        "timeOffsetInProject": 0,
+        "duration": 7387,
+        "transcript": {
+          "items": [
+            {
+              "start_time": 0,
+              "end_time": 360,
+              "confidence": "",
+              "content": "Most",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 360,
+              "end_time": 1120,
+              "confidence": "",
+              "content": "cappuccinos",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1120,
+              "end_time": 1430,
+              "confidence": "",
+              "content": "fail",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1430,
+              "end_time": 1510,
+              "confidence": "",
+              "content": "in",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1510,
+              "end_time": 1570,
+              "confidence": "",
+              "content": "the",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1570,
+              "end_time": 2038,
+              "confidence": "",
+              "content": "milk",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2038,
+              "end_time": 2039,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2039,
+              "end_time": 2144,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2144,
+              "end_time": 2200,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2200,
+              "end_time": 2550,
+              "confidence": "",
+              "content": "Fix",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2550,
+              "end_time": 2848,
+              "confidence": "",
+              "content": "that",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2848,
+              "end_time": 2849,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2849,
+              "end_time": 3090,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3090,
+              "end_time": 3230,
+              "confidence": "",
+              "content": "and",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3230,
+              "end_time": 3610,
+              "confidence": "",
+              "content": "everything",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3610,
+              "end_time": 3830,
+              "confidence": "",
+              "content": "gets",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3830,
+              "end_time": 4308,
+              "confidence": "",
+              "content": "easier",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4308,
+              "end_time": 4309,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4309,
+              "end_time": 4940,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4940,
+              "end_time": 5020,
+              "confidence": "",
+              "content": "A",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 5020,
+              "end_time": 5790,
+              "confidence": "",
+              "content": "cappuccino",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 5790,
+              "end_time": 5890,
+              "confidence": "",
+              "content": "is",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 5890,
+              "end_time": 6070,
+              "confidence": "",
+              "content": "all",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 6070,
+              "end_time": 6360,
+              "confidence": "",
+              "content": "about",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 6360,
+              "end_time": 6968,
+              "confidence": "",
+              "content": "balance",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 6968,
+              "end_time": 6969,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 6969,
+              "end_time": 7087,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 7087,
+              "end_time": 7387,
+              "confidence": "",
+              "content": "",
+              "type": "pause",
+              "sentence_end": false,
+              "paragraph_end": false
+            }
+          ],
+          "sentences": [
+            {
+              "duration": 2200,
+              "content": "Most cappuccinos fail in the milk.",
+              "type": ""
+            },
+            {
+              "duration": 1630,
+              "content": "Fix that, and everything gets",
+              "type": ""
+            },
+            {
+              "duration": 2530,
+              "content": "easier. A cappuccino is all about",
+              "type": ""
+            },
+            {
+              "duration": 727,
+              "content": "balance.",
+              "type": ""
+            },
+            {
+              "duration": 300,
+              "content": "",
+              "type": "pause"
+            }
+          ],
+          "highLights": [
+            {
+              "startIndex": 5,
+              "endIndex": 5,
+              "text": "milk",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 24,
+              "endIndex": 24,
+              "text": "balance",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 1,
+              "endIndex": 1,
+              "text": "cappuccinos",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 16,
+              "endIndex": 16,
+              "text": "easier",
+              "color": "#40A6FF",
+              "fontSize": 72
+            }
+          ],
+          "originalKeywords": [
+            "milk",
+            "balance",
+            "cappuccinos",
+            "easier"
+          ],
+          "originalVoiceover": "Most cappuccinos fail in the milk. Fix that, and everything gets easier. A cappuccino is all about balance."
+        },
+        "voiceOvers": [
+          {
+            "timelineUuid": "1558051857509720064",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051815608623104",
+            "sceneUuid": "1558051634997698560",
+            "category": "synthetic_voice_over",
+            "timeOffsetInProject": 0,
+            "startTime": 0,
+            "endTime": 7087,
+            "timelineDuration": 7087,
+            "voiceUuid": "228",
+            "voiceLocale": "en",
+            "volume": 1
+          }
+        ],
+        "layers": [],
+        "textOnScreen": {
+          "subtitleText": {
+            "styleNo": 105,
+            "textColor": "#FFFFFFFF",
+            "textSize": 72,
+            "textFont": "Roboto",
+            "textFontWeight": 400,
+            "textLetterSpacing": 0,
+            "textLineHeight": 20,
+            "textItalic": false,
+            "textUnderline": false,
+            "positionType": "bottom_center",
+            "textAlign": "center",
+            "textCaseStyle": "none",
+            "text": "Most cappuccinos fail in the milk.\nFix that, and everything gets\neasier. A cappuccino is all about\nbalance.\n",
+            "position": [
+              360,
+              960
+            ],
+            "width": 1200,
+            "textEnable": true,
+            "backgroundEnable": false,
+            "backgroundColor": "",
+            "backgroundRadius": 16,
+            "outlineEnable": false,
+            "outlineColor": "",
+            "outlineThickness": 40,
+            "shadowEnable": false,
+            "shadowColor": "",
+            "shadowDistance": 4,
+            "shadowAngle": 90,
+            "shadowBlur": 10,
+            "display": true,
+            "padding": 8,
+            "textLineSpace": 0,
+            "textStyle": {
+              "padding": 8,
+              "display": true,
+              "lineHeight": 1.2000000476837158,
+              "lineSpace": 0
+            },
+            "usePosition": false,
+            "cssStyle": {
+              "fontFamily": "Roboto",
+              "fontSize": 72,
+              "color": "#FFFFFFFF",
+              "fontStyle": "normal",
+              "fontWeight": "Regular",
+              "lineHeight": 20,
+              "lineSpace": 0,
+              "width": 1200,
+              "maxWidth": 1920,
+              "alignment": "center",
+              "letterSpacing": 0,
+              "textDecoration": "none",
+              "shadow": {
+                "enable": false,
+                "color": "",
+                "style": 0,
+                "distance": 4,
+                "angle": 90,
+                "blur": 10,
+                "offsetX": 0,
+                "offsetY": 4
+              },
+              "outline": {
+                "enable": false,
+                "color": "",
+                "width": 40
+              },
+              "background": {
+                "enable": false,
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8,
+                "style": 1
+              }
+            },
+            "fontUuid": "50",
+            "highlightEnable": false,
+            "highlightColor": "",
+            "highlightType": "keywords",
+            "highlightStyleType": "word_highlight",
+            "highlightSize": 72,
+            "animationEnable": false,
+            "animationType": "word_highlight",
+            "animationAttributes": {
+              "color": ""
+            },
+            "offsetTexts": [
+              {
+                "text": "Most cappuccinos fail in the milk.",
+                "start": 0,
+                "end": 2200
+              },
+              {
+                "text": "Fix that, and everything gets",
+                "start": 2200,
+                "end": 3830
+              },
+              {
+                "text": "easier. A cappuccino is all about",
+                "start": 3830,
+                "end": 6360
+              },
+              {
+                "text": "balance.",
+                "start": 6360,
+                "end": 7087
+              },
+              {
+                "text": "",
+                "start": 7087,
+                "end": 7387
+              }
+            ],
+            "highlightCssStyle": {
+              "box": {
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8
+              },
+              "word": {
+                "color": "",
+                "fontSize": 72
+              },
+              "words": []
+            },
+            "highLightEnable": false,
+            "size": 72,
+            "caseStyle": "none",
+            "color": "#FFFFFFFF",
+            "font": "Roboto",
+            "zindex": 1001,
+            "align": "center",
+            "backgroundStyle": 0
+          }
+        },
+        "pauseTime": 300,
+        "transcriptModified": false,
+        "transcriptModifiedStatus": {
+          "changed": false,
+          "voiceRedo": false,
+          "recommendFootageRedo": false
+        },
+        "transitions": [],
+        "brollShorterPolicyKey": 1,
+        "holdLastFrame": true,
+        "bgmVolume": 0.5,
+        "metadata": {
+          "description": "Cappuccino in a cozy home-barista kitchen setup: close-up of a finished cup on a wooden counter beside a stainless milk pitcher and espresso machine, with natural window light and shallow depth of field to suggest balance and craft.",
+          "keywords": [
+            "cappuccino balance",
+            "finished cappuccino close up",
+            "home barista espresso machine",
+            "milk pitcher on counter",
+            "natural light coffee scene",
+            "cappuccino"
+          ]
+        },
+        "brolls": [
+          {
+            "timelineUuid": "1558051635182247936",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051634498576384",
+            "sceneUuid": "1558051634997698560",
+            "category": "footage",
+            "timeOffsetInProject": 0,
+            "startTime": 0,
+            "endTime": 6651,
+            "volume": 0,
+            "scale": 1,
+            "rotation": 0,
+            "speed": 1,
+            "effectiveDuration": 6651,
+            "backgroundFilling": "none",
+            "backgroundColor": "",
+            "visible": true,
+            "flipHorizontal": false,
+            "coordOffset": [
+              0,
+              0
+            ],
+            "audioExist": false,
+            "timelineDuration": 6651,
+            "kenburnsData": {
+              "aiKenBurns": []
+            },
+            "processStatus": "completed",
+            "status": "active",
+            "createdAt": 1791510057000,
+            "modifiedAt": 1791510057000,
+            "holdLastFrame": true,
+            "zindex": 105
+          }
+        ],
+        "arolls": [],
+        "training": {
+          "title": "Scene 1",
+          "videoUrl": "https://media.gettyimages.com/id/2022716167/video/a-cappuccino-cup-placed-on-a-saucer-in-a-cozy-cafe-setting.mp4?b=1&s=mp4-640x640-gi&k=20&c=5uBL2xIVCKT0pmSPHdOUaJKA1xuADbYRs5iBwU2nhFQ=",
+          "narration": "Most cappuccinos fail in the milk. Fix that, and everything gets easier. A cappuccino is all about balance.",
+          "next": "next"
+        }
+      },
+      {
+        "sceneUuid": "1558051634997698561",
+        "segmentUuid": "1558051635031252992",
+        "projectUuid": "1558050418641130057",
+        "name": "Scene 2",
+        "sceneType": "default",
+        "timeOffsetInProject": 7387,
+        "duration": 4573,
+        "transcript": {
+          "items": [
+            {
+              "start_time": 0,
+              "end_time": 373,
+              "confidence": "",
+              "content": "Start",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 373,
+              "end_time": 493,
+              "confidence": "",
+              "content": "with",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 493,
+              "end_time": 533,
+              "confidence": "",
+              "content": "a",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 533,
+              "end_time": 873,
+              "confidence": "",
+              "content": "fresh",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 873,
+              "end_time": 1103,
+              "confidence": "",
+              "content": "dose",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1103,
+              "end_time": 1203,
+              "confidence": "",
+              "content": "of",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1203,
+              "end_time": 1553,
+              "confidence": "",
+              "content": "coffee",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1553,
+              "end_time": 2051,
+              "confidence": "",
+              "content": "beans",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2051,
+              "end_time": 2052,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2052,
+              "end_time": 2313,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2313,
+              "end_time": 2663,
+              "confidence": "",
+              "content": "Grind",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2663,
+              "end_time": 3101,
+              "confidence": "",
+              "content": "fine",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3101,
+              "end_time": 3102,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3102,
+              "end_time": 3243,
+              "confidence": "",
+              "content": "but",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3243,
+              "end_time": 3463,
+              "confidence": "",
+              "content": "not",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3463,
+              "end_time": 4011,
+              "confidence": "",
+              "content": "powdery",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4011,
+              "end_time": 4012,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4012,
+              "end_time": 4273,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4273,
+              "end_time": 4573,
+              "confidence": "",
+              "content": "",
+              "type": "pause",
+              "sentence_end": false,
+              "paragraph_end": false
+            }
+          ],
+          "sentences": [
+            {
+              "duration": 1553,
+              "content": "Start with a fresh dose of coffee",
+              "type": ""
+            },
+            {
+              "duration": 1910,
+              "content": "beans. Grind fine, but not",
+              "type": ""
+            },
+            {
+              "duration": 810,
+              "content": "powdery.",
+              "type": ""
+            },
+            {
+              "duration": 300,
+              "content": "",
+              "type": "pause"
+            }
+          ],
+          "highLights": [
+            {
+              "startIndex": 6,
+              "endIndex": 7,
+              "text": "coffee beans",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 10,
+              "endIndex": 11,
+              "text": "Grind fine",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 14,
+              "endIndex": 15,
+              "text": "not powdery",
+              "color": "#40A6FF",
+              "fontSize": 72
+            }
+          ],
+          "originalKeywords": [
+            "coffee beans",
+            "Grind fine",
+            "not powdery"
+          ],
+          "originalVoiceover": "Start with a fresh dose of coffee beans. Grind fine, but not powdery."
+        },
+        "voiceOvers": [
+          {
+            "timelineUuid": "1558051857874624512",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051815608623104",
+            "sceneUuid": "1558051634997698561",
+            "category": "synthetic_voice_over",
+            "timeOffsetInProject": 7387,
+            "startTime": 7087,
+            "endTime": 11360,
+            "timelineDuration": 4273,
+            "voiceUuid": "228",
+            "voiceLocale": "en",
+            "volume": 1
+          }
+        ],
+        "layers": [],
+        "textOnScreen": {
+          "subtitleText": {
+            "styleNo": 105,
+            "textColor": "#FFFFFFFF",
+            "textSize": 72,
+            "textFont": "Roboto",
+            "textFontWeight": 400,
+            "textLetterSpacing": 0,
+            "textLineHeight": 20,
+            "textItalic": false,
+            "textUnderline": false,
+            "positionType": "bottom_center",
+            "textAlign": "center",
+            "textCaseStyle": "none",
+            "text": "Start with a fresh dose of coffee\nbeans. Grind fine, but not\npowdery.\n",
+            "position": [
+              360,
+              960
+            ],
+            "width": 1200,
+            "textEnable": true,
+            "backgroundEnable": false,
+            "backgroundColor": "",
+            "backgroundRadius": 16,
+            "outlineEnable": false,
+            "outlineColor": "",
+            "outlineThickness": 40,
+            "shadowEnable": false,
+            "shadowColor": "",
+            "shadowDistance": 4,
+            "shadowAngle": 90,
+            "shadowBlur": 10,
+            "display": true,
+            "padding": 8,
+            "textLineSpace": 0,
+            "textStyle": {
+              "padding": 8,
+              "display": true,
+              "lineHeight": 1.2000000476837158,
+              "lineSpace": 0
+            },
+            "usePosition": false,
+            "cssStyle": {
+              "fontFamily": "Roboto",
+              "fontSize": 72,
+              "color": "#FFFFFFFF",
+              "fontStyle": "normal",
+              "fontWeight": "Regular",
+              "lineHeight": 20,
+              "lineSpace": 0,
+              "width": 1200,
+              "maxWidth": 1920,
+              "alignment": "center",
+              "letterSpacing": 0,
+              "textDecoration": "none",
+              "shadow": {
+                "enable": false,
+                "color": "",
+                "style": 0,
+                "distance": 4,
+                "angle": 90,
+                "blur": 10,
+                "offsetX": 0,
+                "offsetY": 4
+              },
+              "outline": {
+                "enable": false,
+                "color": "",
+                "width": 40
+              },
+              "background": {
+                "enable": false,
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8,
+                "style": 1
+              }
+            },
+            "fontUuid": "50",
+            "highlightEnable": false,
+            "highlightColor": "",
+            "highlightType": "keywords",
+            "highlightStyleType": "word_highlight",
+            "highlightSize": 72,
+            "animationEnable": false,
+            "animationType": "word_highlight",
+            "animationAttributes": {
+              "color": ""
+            },
+            "offsetTexts": [
+              {
+                "text": "Start with a fresh dose of coffee",
+                "start": 0,
+                "end": 1553
+              },
+              {
+                "text": "beans. Grind fine, but not",
+                "start": 1553,
+                "end": 3463
+              },
+              {
+                "text": "powdery.",
+                "start": 3463,
+                "end": 4273
+              },
+              {
+                "text": "",
+                "start": 4273,
+                "end": 4573
+              }
+            ],
+            "highlightCssStyle": {
+              "box": {
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8
+              },
+              "word": {
+                "color": "",
+                "fontSize": 72
+              },
+              "words": []
+            },
+            "highLightEnable": false,
+            "size": 72,
+            "caseStyle": "none",
+            "color": "#FFFFFFFF",
+            "font": "Roboto",
+            "zindex": 1001,
+            "align": "center",
+            "backgroundStyle": 0
+          }
+        },
+        "pauseTime": 300,
+        "transcriptModified": false,
+        "transcriptModifiedStatus": {
+          "changed": false,
+          "voiceRedo": false,
+          "recommendFootageRedo": false
+        },
+        "transitions": [],
+        "brollShorterPolicyKey": 1,
+        "holdLastFrame": true,
+        "bgmVolume": 0.5,
+        "metadata": {
+          "description": "Cappuccino preparation begins with an overhead close-up of fresh coffee beans being poured into a coffee grinder hopper, then a quick cut to burr grinder grinding into a dosing cup in warm natural light.",
+          "keywords": [
+            "cappuccino coffee beans",
+            "coffee grinder close up",
+            "fresh espresso beans pour",
+            "burr grinder grinding",
+            "home barista setup",
+            "cappuccino"
+          ]
+        },
+        "brolls": [
+          {
+            "timelineUuid": "1558051635232579584",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051634561490944",
+            "sceneUuid": "1558051634997698561",
+            "category": "footage",
+            "timeOffsetInProject": 7387,
+            "startTime": 0,
+            "endTime": 4573,
+            "volume": 0,
+            "scale": 1,
+            "rotation": 0,
+            "speed": 1,
+            "effectiveDuration": 4573,
+            "backgroundFilling": "none",
+            "backgroundColor": "",
+            "visible": true,
+            "flipHorizontal": false,
+            "coordOffset": [
+              0,
+              0
+            ],
+            "audioExist": false,
+            "timelineDuration": 4573,
+            "kenburnsData": {
+              "aiKenBurns": []
+            },
+            "processStatus": "completed",
+            "status": "active",
+            "createdAt": 1791510057000,
+            "modifiedAt": 1791510110000,
+            "holdLastFrame": true,
+            "zindex": 105
+          }
+        ],
+        "arolls": [],
+        "training": {
+          "title": "Scene 2",
+          "videoUrl": "https://media.gettyimages.com/id/973116484/video/process-of-making-cappucino.mp4?b=1&s=mp4-640x640-gi&k=20&c=ipb6JDNJet5J6JAffARqGOw9tIdPD5CfUZ0Naz0JS1o=",
+          "narration": "Start with a fresh dose of coffee beans. Grind fine, but not powdery.",
+          "next": "next"
+        }
+      },
+      {
+        "sceneUuid": "1558051634997698562",
+        "segmentUuid": "1558051635031252992",
+        "projectUuid": "1558050418641130057",
+        "name": "Scene 3",
+        "sceneType": "default",
+        "timeOffsetInProject": 11960,
+        "duration": 10650,
+        "transcript": {
+          "items": [
+            {
+              "start_time": 0,
+              "end_time": 620,
+              "confidence": "",
+              "content": "Distribute",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 620,
+              "end_time": 690,
+              "confidence": "",
+              "content": "the",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 690,
+              "end_time": 1100,
+              "confidence": "",
+              "content": "grounds",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1100,
+              "end_time": 1588,
+              "confidence": "",
+              "content": "evenly",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1588,
+              "end_time": 1589,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1589,
+              "end_time": 1668,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1668,
+              "end_time": 1710,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1710,
+              "end_time": 1900,
+              "confidence": "",
+              "content": "then",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1900,
+              "end_time": 2220,
+              "confidence": "",
+              "content": "tamp",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2220,
+              "end_time": 2620,
+              "confidence": "",
+              "content": "level",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2620,
+              "end_time": 2650,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2650,
+              "end_time": 2780,
+              "confidence": "",
+              "content": "and",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2780,
+              "end_time": 3238,
+              "confidence": "",
+              "content": "steady",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3238,
+              "end_time": 3239,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3239,
+              "end_time": 3740,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3740,
+              "end_time": 3940,
+              "confidence": "",
+              "content": "Pull",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3940,
+              "end_time": 4070,
+              "confidence": "",
+              "content": "your",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4070,
+              "end_time": 4600,
+              "confidence": "",
+              "content": "espresso",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4600,
+              "end_time": 4790,
+              "confidence": "",
+              "content": "to",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4790,
+              "end_time": 4830,
+              "confidence": "",
+              "content": "a",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4830,
+              "end_time": 5330,
+              "confidence": "",
+              "content": "simple",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 5330,
+              "end_time": 5760,
+              "confidence": "",
+              "content": "1:2",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 5760,
+              "end_time": 6468,
+              "confidence": "",
+              "content": "ratio",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 6468,
+              "end_time": 6469,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 6469,
+              "end_time": 6570,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 6570,
+              "end_time": 6910,
+              "confidence": "",
+              "content": "around",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 6910,
+              "end_time": 7390,
+              "confidence": "",
+              "content": "25",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 7390,
+              "end_time": 7530,
+              "confidence": "",
+              "content": "to",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 7530,
+              "end_time": 7790,
+              "confidence": "",
+              "content": "30",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 7790,
+              "end_time": 8308,
+              "confidence": "",
+              "content": "seconds",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 8308,
+              "end_time": 8309,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 8309,
+              "end_time": 8480,
+              "confidence": "",
+              "content": "so",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 8480,
+              "end_time": 8560,
+              "confidence": "",
+              "content": "it",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 8560,
+              "end_time": 8890,
+              "confidence": "",
+              "content": "stays",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 8890,
+              "end_time": 9220,
+              "confidence": "",
+              "content": "bold",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 9220,
+              "end_time": 9310,
+              "confidence": "",
+              "content": "and",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 9310,
+              "end_time": 9748,
+              "confidence": "",
+              "content": "sweet",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 9748,
+              "end_time": 9749,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 9749,
+              "end_time": 10250,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 10250,
+              "end_time": 10650,
+              "confidence": "",
+              "content": "",
+              "type": "pause",
+              "sentence_end": false,
+              "paragraph_end": false
+            }
+          ],
+          "sentences": [
+            {
+              "duration": 1710,
+              "content": "Distribute the grounds evenly,",
+              "type": ""
+            },
+            {
+              "duration": 2230,
+              "content": "then tamp level and steady. Pull",
+              "type": ""
+            },
+            {
+              "duration": 1820,
+              "content": "your espresso to a simple 1:2",
+              "type": ""
+            },
+            {
+              "duration": 2549,
+              "content": "ratio, around 25 to 30 seconds,",
+              "type": ""
+            },
+            {
+              "duration": 1941,
+              "content": "so it stays bold and sweet.",
+              "type": ""
+            },
+            {
+              "duration": 400,
+              "content": "",
+              "type": "pause"
+            }
+          ],
+          "highLights": [
+            {
+              "startIndex": 2,
+              "endIndex": 3,
+              "text": "grounds evenly",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 8,
+              "endIndex": 9,
+              "text": "tamp level",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 21,
+              "endIndex": 22,
+              "text": "1:2 ratio",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 26,
+              "endIndex": 29,
+              "text": "25 to 30 seconds",
+              "color": "#40A6FF",
+              "fontSize": 72
+            }
+          ],
+          "originalKeywords": [
+            "grounds evenly",
+            "tamp level",
+            "1:2 ratio",
+            "25 to 30 seconds"
+          ],
+          "originalVoiceover": "Distribute the grounds evenly, then tamp level and steady. Pull your espresso to a simple 1:2 ratio, around 25 to 30 seconds, so it stays bold and sweet."
+        },
+        "voiceOvers": [
+          {
+            "timelineUuid": "1558051858147254272",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051815608623104",
+            "sceneUuid": "1558051634997698562",
+            "category": "synthetic_voice_over",
+            "timeOffsetInProject": 11960,
+            "startTime": 11360,
+            "endTime": 21610,
+            "timelineDuration": 10250,
+            "voiceUuid": "228",
+            "voiceLocale": "en",
+            "volume": 1
+          }
+        ],
+        "layers": [],
+        "textOnScreen": {
+          "subtitleText": {
+            "styleNo": 105,
+            "textColor": "#FFFFFFFF",
+            "textSize": 72,
+            "textFont": "Roboto",
+            "textFontWeight": 400,
+            "textLetterSpacing": 0,
+            "textLineHeight": 20,
+            "textItalic": false,
+            "textUnderline": false,
+            "positionType": "bottom_center",
+            "textAlign": "center",
+            "textCaseStyle": "none",
+            "text": "Distribute the grounds evenly,\nthen tamp level and steady. Pull\nyour espresso to a simple 1:2\nratio, around 25 to 30 seconds,\nso it stays bold and sweet.\n",
+            "position": [
+              360,
+              960
+            ],
+            "width": 1200,
+            "textEnable": true,
+            "backgroundEnable": false,
+            "backgroundColor": "",
+            "backgroundRadius": 16,
+            "outlineEnable": false,
+            "outlineColor": "",
+            "outlineThickness": 40,
+            "shadowEnable": false,
+            "shadowColor": "",
+            "shadowDistance": 4,
+            "shadowAngle": 90,
+            "shadowBlur": 10,
+            "display": true,
+            "padding": 8,
+            "textLineSpace": 0,
+            "textStyle": {
+              "padding": 8,
+              "display": true,
+              "lineHeight": 1.2000000476837158,
+              "lineSpace": 0
+            },
+            "usePosition": false,
+            "cssStyle": {
+              "fontFamily": "Roboto",
+              "fontSize": 72,
+              "color": "#FFFFFFFF",
+              "fontStyle": "normal",
+              "fontWeight": "Regular",
+              "lineHeight": 20,
+              "lineSpace": 0,
+              "width": 1200,
+              "maxWidth": 1920,
+              "alignment": "center",
+              "letterSpacing": 0,
+              "textDecoration": "none",
+              "shadow": {
+                "enable": false,
+                "color": "",
+                "style": 0,
+                "distance": 4,
+                "angle": 90,
+                "blur": 10,
+                "offsetX": 0,
+                "offsetY": 4
+              },
+              "outline": {
+                "enable": false,
+                "color": "",
+                "width": 40
+              },
+              "background": {
+                "enable": false,
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8,
+                "style": 1
+              }
+            },
+            "fontUuid": "50",
+            "highlightEnable": false,
+            "highlightColor": "",
+            "highlightType": "keywords",
+            "highlightStyleType": "word_highlight",
+            "highlightSize": 72,
+            "animationEnable": false,
+            "animationType": "word_highlight",
+            "animationAttributes": {
+              "color": ""
+            },
+            "offsetTexts": [
+              {
+                "text": "Distribute the grounds evenly,",
+                "start": 0,
+                "end": 1710
+              },
+              {
+                "text": "then tamp level and steady. Pull",
+                "start": 1710,
+                "end": 3940
+              },
+              {
+                "text": "your espresso to a simple 1:2",
+                "start": 3940,
+                "end": 5760
+              },
+              {
+                "text": "ratio, around 25 to 30 seconds,",
+                "start": 5760,
+                "end": 8309
+              },
+              {
+                "text": "so it stays bold and sweet.",
+                "start": 8309,
+                "end": 10250
+              },
+              {
+                "text": "",
+                "start": 10250,
+                "end": 10650
+              }
+            ],
+            "highlightCssStyle": {
+              "box": {
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8
+              },
+              "word": {
+                "color": "",
+                "fontSize": 72
+              },
+              "words": []
+            },
+            "highLightEnable": false,
+            "size": 72,
+            "caseStyle": "none",
+            "color": "#FFFFFFFF",
+            "font": "Roboto",
+            "zindex": 1001,
+            "align": "center",
+            "backgroundStyle": 0
+          }
+        },
+        "pauseTime": 400,
+        "transcriptModified": false,
+        "transcriptModifiedStatus": {
+          "changed": false,
+          "voiceRedo": false,
+          "recommendFootageRedo": false
+        },
+        "transitions": [],
+        "brollShorterPolicyKey": 1,
+        "holdLastFrame": true,
+        "bgmVolume": 0.5,
+        "metadata": {
+          "description": "Cappuccino espresso workflow in tight macro shots: coffee grounds in a portafilter being distributed, a tamper pressing level, then espresso extraction flowing from a portafilter spout into a small cup with rich crema.",
+          "keywords": [
+            "cappuccino espresso extraction",
+            "tamping portafilter",
+            "coffee grounds distribution",
+            "espresso shot crema close up",
+            "home barista tamper",
+            "cappuccino"
+          ]
+        },
+        "brolls": [
+          {
+            "timelineUuid": "1558051635253551104",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051634628599808",
+            "sceneUuid": "1558051634997698562",
+            "category": "footage",
+            "timeOffsetInProject": 11960,
+            "startTime": 0,
+            "endTime": 10650,
+            "volume": 0,
+            "scale": 1,
+            "rotation": 0,
+            "speed": 1,
+            "effectiveDuration": 10650,
+            "backgroundFilling": "none",
+            "backgroundColor": "",
+            "visible": true,
+            "flipHorizontal": false,
+            "coordOffset": [
+              0,
+              0
+            ],
+            "audioExist": false,
+            "timelineDuration": 10650,
+            "kenburnsData": {
+              "aiKenBurns": []
+            },
+            "processStatus": "completed",
+            "status": "active",
+            "createdAt": 1791510057000,
+            "modifiedAt": 1791510110000,
+            "holdLastFrame": true,
+            "zindex": 105
+          }
+        ],
+        "arolls": [],
+        "training": {
+          "title": "Scene 3",
+          "videoUrl": "https://media.gettyimages.com/id/1282332132/video/espresso-shot-close-up.mp4?b=1&s=mp4-640x640-gi&k=20&c=Z3k8EuOQObZmTUTGL9wBTUlPnTO-u6nfrVGrM0Lw3fM=",
+          "narration": "Distribute the grounds evenly, then tamp level and steady. Pull your espresso to a simple 1:2 ratio, around 25 to 30 seconds, so it stays bold and sweet.",
+          "next": "next",
+          "quiz": {
+            "id": "cappuccino-question-2",
+            "title": "咖啡粉应磨成什么状态？",
+            "graded": true,
+            "correct": 0,
+            "feedback": "使用新鲜咖啡豆，研磨细但不要呈粉末状。",
+            "options": [
+              {
+                "text": "细，但不是粉末状",
+                "target": "default"
+              },
+              {
+                "text": "越粗越好",
+                "target": "default"
+              },
+              {
+                "text": "潮湿结块",
+                "target": "default"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sceneUuid": "1558051634997698563",
+        "segmentUuid": "1558051635031252993",
+        "projectUuid": "1558050418641130057",
+        "name": "Scene 4",
+        "sceneType": "default",
+        "timeOffsetInProject": 22610,
+        "duration": 7210,
+        "transcript": {
+          "items": [
+            {
+              "start_time": 0,
+              "end_time": 440,
+              "confidence": "",
+              "content": "Now",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 440,
+              "end_time": 810,
+              "confidence": "",
+              "content": "steam",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 810,
+              "end_time": 880,
+              "confidence": "",
+              "content": "the",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 880,
+              "end_time": 1298,
+              "confidence": "",
+              "content": "milk",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1298,
+              "end_time": 1299,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1299,
+              "end_time": 1570,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1570,
+              "end_time": 1760,
+              "confidence": "",
+              "content": "Add",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1760,
+              "end_time": 1790,
+              "confidence": "",
+              "content": "a",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1790,
+              "end_time": 2070,
+              "confidence": "",
+              "content": "little",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2070,
+              "end_time": 2290,
+              "confidence": "",
+              "content": "air",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2290,
+              "end_time": 2360,
+              "confidence": "",
+              "content": "at",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2360,
+              "end_time": 2868,
+              "confidence": "",
+              "content": "first",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2868,
+              "end_time": 2869,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2869,
+              "end_time": 2920,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2920,
+              "end_time": 3080,
+              "confidence": "",
+              "content": "then",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3080,
+              "end_time": 3300,
+              "confidence": "",
+              "content": "keep",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3300,
+              "end_time": 3390,
+              "confidence": "",
+              "content": "it",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3390,
+              "end_time": 3760,
+              "confidence": "",
+              "content": "spinning",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3760,
+              "end_time": 4000,
+              "confidence": "",
+              "content": "until",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4000,
+              "end_time": 4090,
+              "confidence": "",
+              "content": "it",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4090,
+              "end_time": 4400,
+              "confidence": "",
+              "content": "turns",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4400,
+              "end_time": 4810,
+              "confidence": "",
+              "content": "glossy",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4810,
+              "end_time": 4930,
+              "confidence": "",
+              "content": "and",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4930,
+              "end_time": 5478,
+              "confidence": "",
+              "content": "smooth",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5478,
+              "end_time": 5479,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5479,
+              "end_time": 5630,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5630,
+              "end_time": 5860,
+              "confidence": "",
+              "content": "like",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 5860,
+              "end_time": 6100,
+              "confidence": "",
+              "content": "wet",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 6100,
+              "end_time": 6518,
+              "confidence": "",
+              "content": "paint",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 6518,
+              "end_time": 6519,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 6519,
+              "end_time": 6910,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 6910,
+              "end_time": 7210,
+              "confidence": "",
+              "content": "",
+              "type": "pause",
+              "sentence_end": false,
+              "paragraph_end": false
+            }
+          ],
+          "sentences": [
+            {
+              "duration": 2070,
+              "content": "Now steam the milk. Add a little",
+              "type": ""
+            },
+            {
+              "duration": 1320,
+              "content": "air at first, then keep it",
+              "type": ""
+            },
+            {
+              "duration": 1420,
+              "content": "spinning until it turns glossy",
+              "type": ""
+            },
+            {
+              "duration": 2100,
+              "content": "and smooth, like wet paint.",
+              "type": ""
+            },
+            {
+              "duration": 300,
+              "content": "",
+              "type": "pause"
+            }
+          ],
+          "highLights": [
+            {
+              "startIndex": 1,
+              "endIndex": 3,
+              "text": "steam the milk",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 8,
+              "endIndex": 9,
+              "text": "little air",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 21,
+              "endIndex": 23,
+              "text": "glossy and smooth",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 27,
+              "endIndex": 28,
+              "text": "wet paint",
+              "color": "#40A6FF",
+              "fontSize": 72
+            }
+          ],
+          "originalKeywords": [
+            "steam the milk",
+            "little air",
+            "glossy and smooth",
+            "wet paint"
+          ],
+          "originalVoiceover": "Now steam the milk. Add a little air at first, then keep it spinning until it turns glossy and smooth, like wet paint."
+        },
+        "voiceOvers": [
+          {
+            "timelineUuid": "1558051858461827072",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051815608623104",
+            "sceneUuid": "1558051634997698563",
+            "category": "synthetic_voice_over",
+            "timeOffsetInProject": 22610,
+            "startTime": 21610,
+            "endTime": 28520,
+            "timelineDuration": 6910,
+            "voiceUuid": "228",
+            "voiceLocale": "en",
+            "volume": 1
+          }
+        ],
+        "layers": [],
+        "textOnScreen": {
+          "subtitleText": {
+            "styleNo": 105,
+            "textColor": "#FFFFFFFF",
+            "textSize": 72,
+            "textFont": "Roboto",
+            "textFontWeight": 400,
+            "textLetterSpacing": 0,
+            "textLineHeight": 20,
+            "textItalic": false,
+            "textUnderline": false,
+            "positionType": "bottom_center",
+            "textAlign": "center",
+            "textCaseStyle": "none",
+            "text": "Now steam the milk. Add a little\nair at first, then keep it\nspinning until it turns glossy\nand smooth, like wet paint.\n",
+            "position": [
+              360,
+              960
+            ],
+            "width": 1200,
+            "textEnable": true,
+            "backgroundEnable": false,
+            "backgroundColor": "",
+            "backgroundRadius": 16,
+            "outlineEnable": false,
+            "outlineColor": "",
+            "outlineThickness": 40,
+            "shadowEnable": false,
+            "shadowColor": "",
+            "shadowDistance": 4,
+            "shadowAngle": 90,
+            "shadowBlur": 10,
+            "display": true,
+            "padding": 8,
+            "textLineSpace": 0,
+            "textStyle": {
+              "padding": 8,
+              "display": true,
+              "lineHeight": 1.2000000476837158,
+              "lineSpace": 0
+            },
+            "usePosition": false,
+            "cssStyle": {
+              "fontFamily": "Roboto",
+              "fontSize": 72,
+              "color": "#FFFFFFFF",
+              "fontStyle": "normal",
+              "fontWeight": "Regular",
+              "lineHeight": 20,
+              "lineSpace": 0,
+              "width": 1200,
+              "maxWidth": 1920,
+              "alignment": "center",
+              "letterSpacing": 0,
+              "textDecoration": "none",
+              "shadow": {
+                "enable": false,
+                "color": "",
+                "style": 0,
+                "distance": 4,
+                "angle": 90,
+                "blur": 10,
+                "offsetX": 0,
+                "offsetY": 4
+              },
+              "outline": {
+                "enable": false,
+                "color": "",
+                "width": 40
+              },
+              "background": {
+                "enable": false,
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8,
+                "style": 1
+              }
+            },
+            "fontUuid": "50",
+            "highlightEnable": false,
+            "highlightColor": "",
+            "highlightType": "keywords",
+            "highlightStyleType": "word_highlight",
+            "highlightSize": 72,
+            "animationEnable": false,
+            "animationType": "word_highlight",
+            "animationAttributes": {
+              "color": ""
+            },
+            "offsetTexts": [
+              {
+                "text": "Now steam the milk. Add a little",
+                "start": 0,
+                "end": 2070
+              },
+              {
+                "text": "air at first, then keep it",
+                "start": 2070,
+                "end": 3390
+              },
+              {
+                "text": "spinning until it turns glossy",
+                "start": 3390,
+                "end": 4810
+              },
+              {
+                "text": "and smooth, like wet paint.",
+                "start": 4810,
+                "end": 6910
+              },
+              {
+                "text": "",
+                "start": 6910,
+                "end": 7210
+              }
+            ],
+            "highlightCssStyle": {
+              "box": {
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8
+              },
+              "word": {
+                "color": "",
+                "fontSize": 72
+              },
+              "words": []
+            },
+            "highLightEnable": false,
+            "size": 72,
+            "caseStyle": "none",
+            "color": "#FFFFFFFF",
+            "font": "Roboto",
+            "zindex": 1001,
+            "align": "center",
+            "backgroundStyle": 0
+          }
+        },
+        "pauseTime": 300,
+        "transcriptModified": false,
+        "transcriptModifiedStatus": {
+          "changed": false,
+          "voiceRedo": false,
+          "recommendFootageRedo": false
+        },
+        "transitions": [],
+        "brollShorterPolicyKey": 1,
+        "holdLastFrame": true,
+        "bgmVolume": 0.5,
+        "metadata": {
+          "description": "Cappuccino milk steaming sequence: close-up of cold milk in a stainless pitcher as a steam wand introduces air briefly, then the pitcher angle changes to create a visible whirlpool for glossy microfoam texture.",
+          "keywords": [
+            "cappuccino milk steaming",
+            "steam wand close up",
+            "microfoam glossy milk",
+            "milk pitcher whirlpool",
+            "espresso machine steaming",
+            "cappuccino"
+          ]
+        },
+        "brolls": [
+          {
+            "timelineUuid": "1558051635274522624",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051634699902976",
+            "sceneUuid": "1558051634997698563",
+            "category": "footage",
+            "timeOffsetInProject": 22610,
+            "startTime": 0,
+            "endTime": 7210,
+            "volume": 0,
+            "scale": 1,
+            "rotation": 0,
+            "speed": 1,
+            "effectiveDuration": 7210,
+            "backgroundFilling": "none",
+            "backgroundColor": "",
+            "visible": true,
+            "flipHorizontal": false,
+            "coordOffset": [
+              0,
+              0
+            ],
+            "audioExist": false,
+            "timelineDuration": 7210,
+            "kenburnsData": {
+              "aiKenBurns": []
+            },
+            "processStatus": "completed",
+            "status": "active",
+            "createdAt": 1791510057000,
+            "modifiedAt": 1791510110000,
+            "holdLastFrame": true,
+            "zindex": 105
+          }
+        ],
+        "arolls": [],
+        "training": {
+          "title": "Scene 4",
+          "videoUrl": "https://media.gettyimages.com/id/959667322/video/process-of-making-cappuccino.mp4?b=1&s=mp4-640x640-gi&k=20&c=SDzvzwtsG-0_VAJgxSJUwhAvgvPVx9mUoQx6qak9XWc=",
+          "narration": "Now steam the milk. Add a little air at first, then keep it spinning until it turns glossy and smooth, like wet paint.",
+          "next": "next"
+        }
+      },
+      {
+        "sceneUuid": "1558051634997698564",
+        "segmentUuid": "1558051635031252993",
+        "projectUuid": "1558050418641130057",
+        "name": "Scene 5",
+        "sceneType": "default",
+        "timeOffsetInProject": 29820,
+        "duration": 5417,
+        "transcript": {
+          "items": [
+            {
+              "start_time": 0,
+              "end_time": 530,
+              "confidence": "",
+              "content": "Stop",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 530,
+              "end_time": 1040,
+              "confidence": "",
+              "content": "around",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1040,
+              "end_time": 1410,
+              "confidence": "",
+              "content": "140",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1410,
+              "end_time": 1550,
+              "confidence": "",
+              "content": "to",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1550,
+              "end_time": 2370,
+              "confidence": "",
+              "content": "149",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2370,
+              "end_time": 2750,
+              "confidence": "",
+              "content": "degrees",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2750,
+              "end_time": 3328,
+              "confidence": "",
+              "content": "Fahrenheit",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3328,
+              "end_time": 3329,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3329,
+              "end_time": 3780,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3780,
+              "end_time": 4030,
+              "confidence": "",
+              "content": "Pour",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4030,
+              "end_time": 4210,
+              "confidence": "",
+              "content": "right",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4210,
+              "end_time": 4608,
+              "confidence": "",
+              "content": "away",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4608,
+              "end_time": 4609,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4609,
+              "end_time": 5117,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5117,
+              "end_time": 5417,
+              "confidence": "",
+              "content": "",
+              "type": "pause",
+              "sentence_end": false,
+              "paragraph_end": false
+            }
+          ],
+          "sentences": [
+            {
+              "duration": 2750,
+              "content": "Stop around 140 to 149 degrees",
+              "type": ""
+            },
+            {
+              "duration": 2367,
+              "content": "Fahrenheit. Pour right away.",
+              "type": ""
+            },
+            {
+              "duration": 300,
+              "content": "",
+              "type": "pause"
+            }
+          ],
+          "highLights": [
+            {
+              "startIndex": 2,
+              "endIndex": 6,
+              "text": "140 to 149 degrees Fahrenheit",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 9,
+              "endIndex": 11,
+              "text": "Pour right away",
+              "color": "#40A6FF",
+              "fontSize": 72
+            }
+          ],
+          "originalKeywords": [
+            "140 to 149 degrees Fahrenheit",
+            "Pour right away"
+          ],
+          "originalVoiceover": "Stop around 140 to 149 degrees Fahrenheit. Pour right away."
+        },
+        "voiceOvers": [
+          {
+            "timelineUuid": "1558051858768011264",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051815608623104",
+            "sceneUuid": "1558051634997698564",
+            "category": "synthetic_voice_over",
+            "timeOffsetInProject": 29820,
+            "startTime": 28520,
+            "endTime": 33637,
+            "timelineDuration": 5117,
+            "voiceUuid": "228",
+            "voiceLocale": "en",
+            "volume": 1
+          }
+        ],
+        "layers": [],
+        "textOnScreen": {
+          "subtitleText": {
+            "styleNo": 105,
+            "textColor": "#FFFFFFFF",
+            "textSize": 72,
+            "textFont": "Roboto",
+            "textFontWeight": 400,
+            "textLetterSpacing": 0,
+            "textLineHeight": 20,
+            "textItalic": false,
+            "textUnderline": false,
+            "positionType": "bottom_center",
+            "textAlign": "center",
+            "textCaseStyle": "none",
+            "text": "Stop around 140 to 149 degrees\nFahrenheit. Pour right away.\n",
+            "position": [
+              360,
+              960
+            ],
+            "width": 1200,
+            "textEnable": true,
+            "backgroundEnable": false,
+            "backgroundColor": "",
+            "backgroundRadius": 16,
+            "outlineEnable": false,
+            "outlineColor": "",
+            "outlineThickness": 40,
+            "shadowEnable": false,
+            "shadowColor": "",
+            "shadowDistance": 4,
+            "shadowAngle": 90,
+            "shadowBlur": 10,
+            "display": true,
+            "padding": 8,
+            "textLineSpace": 0,
+            "textStyle": {
+              "padding": 8,
+              "display": true,
+              "lineHeight": 1.2000000476837158,
+              "lineSpace": 0
+            },
+            "usePosition": false,
+            "cssStyle": {
+              "fontFamily": "Roboto",
+              "fontSize": 72,
+              "color": "#FFFFFFFF",
+              "fontStyle": "normal",
+              "fontWeight": "Regular",
+              "lineHeight": 20,
+              "lineSpace": 0,
+              "width": 1200,
+              "maxWidth": 1920,
+              "alignment": "center",
+              "letterSpacing": 0,
+              "textDecoration": "none",
+              "shadow": {
+                "enable": false,
+                "color": "",
+                "style": 0,
+                "distance": 4,
+                "angle": 90,
+                "blur": 10,
+                "offsetX": 0,
+                "offsetY": 4
+              },
+              "outline": {
+                "enable": false,
+                "color": "",
+                "width": 40
+              },
+              "background": {
+                "enable": false,
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8,
+                "style": 1
+              }
+            },
+            "fontUuid": "50",
+            "highlightEnable": false,
+            "highlightColor": "",
+            "highlightType": "keywords",
+            "highlightStyleType": "word_highlight",
+            "highlightSize": 72,
+            "animationEnable": false,
+            "animationType": "word_highlight",
+            "animationAttributes": {
+              "color": ""
+            },
+            "offsetTexts": [
+              {
+                "text": "Stop around 140 to 149 degrees",
+                "start": 0,
+                "end": 2750
+              },
+              {
+                "text": "Fahrenheit. Pour right away.",
+                "start": 2750,
+                "end": 5117
+              },
+              {
+                "text": "",
+                "start": 5117,
+                "end": 5417
+              }
+            ],
+            "highlightCssStyle": {
+              "box": {
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8
+              },
+              "word": {
+                "color": "",
+                "fontSize": 72
+              },
+              "words": []
+            },
+            "highLightEnable": false,
+            "size": 72,
+            "caseStyle": "none",
+            "color": "#FFFFFFFF",
+            "font": "Roboto",
+            "zindex": 1001,
+            "align": "center",
+            "backgroundStyle": 0
+          }
+        },
+        "pauseTime": 300,
+        "transcriptModified": false,
+        "transcriptModifiedStatus": {
+          "changed": false,
+          "voiceRedo": false,
+          "recommendFootageRedo": false
+        },
+        "transitions": [],
+        "brollShorterPolicyKey": 1,
+        "holdLastFrame": true,
+        "bgmVolume": 0.5,
+        "metadata": {
+          "description": "Cappuccino technique detail: close-up of a barista hand holding the milk pitcher while a thermometer reads around 140–149°F, then the steam wand is turned off and the pitcher is tapped and swirled, ready to pour.",
+          "keywords": [
+            "cappuccino milk temperature",
+            "milk thermometer 140 degrees",
+            "barista swirling pitcher",
+            "steam wand off",
+            "microfoam ready to pour",
+            "cappuccino"
+          ]
+        },
+        "brolls": [
+          {
+            "timelineUuid": "1558051635295494144",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051634779594752",
+            "sceneUuid": "1558051634997698564",
+            "category": "footage",
+            "timeOffsetInProject": 29820,
+            "startTime": 0,
+            "endTime": 5417,
+            "volume": 0,
+            "scale": 1,
+            "rotation": 0,
+            "speed": 1,
+            "effectiveDuration": 5417,
+            "backgroundFilling": "none",
+            "backgroundColor": "",
+            "visible": true,
+            "flipHorizontal": false,
+            "coordOffset": [
+              0,
+              0
+            ],
+            "audioExist": false,
+            "timelineDuration": 5417,
+            "kenburnsData": {
+              "aiKenBurns": []
+            },
+            "processStatus": "completed",
+            "status": "active",
+            "createdAt": 1791510057000,
+            "modifiedAt": 1791510110000,
+            "holdLastFrame": true,
+            "zindex": 105
+          }
+        ],
+        "arolls": [],
+        "training": {
+          "title": "Scene 5",
+          "videoUrl": "https://media.gettyimages.com/id/1367321491/video/close-up-a-barista-warms-milk-to-make-a-cappuccino-coffee-drink-tamping-ground-coffee-a.mp4?b=1&s=mp4-640x640-gi&k=20&c=G6EpVhO6DQznHIb0_Xys5OPFT7T0gTAlc-lB_4VcYHE=",
+          "narration": "Stop around 140 to 149 degrees Fahrenheit. Pour right away.",
+          "next": "next",
+          "quiz": {
+            "id": "cappuccino-question-4",
+            "title": "本教程推荐的牛奶停止加热温度是多少？",
+            "graded": true,
+            "correct": 1,
+            "feedback": "在 140–149°F 左右停止，并立即倒奶。",
+            "options": [
+              {
+                "text": "100–110°F",
+                "target": "default"
+              },
+              {
+                "text": "140–149°F",
+                "target": "default"
+              },
+              {
+                "text": "180–190°F",
+                "target": "default"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sceneUuid": "1558051634997698565",
+        "segmentUuid": "1558051635031252993",
+        "projectUuid": "1558050418641130057",
+        "name": "Scene 6",
+        "sceneType": "default",
+        "timeOffsetInProject": 35237,
+        "duration": 6105,
+        "transcript": {
+          "items": [
+            {
+              "start_time": 0,
+              "end_time": 633,
+              "confidence": "",
+              "content": "Start",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 633,
+              "end_time": 833,
+              "confidence": "",
+              "content": "high",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 833,
+              "end_time": 903,
+              "confidence": "",
+              "content": "to",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 903,
+              "end_time": 1183,
+              "confidence": "",
+              "content": "blend",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1183,
+              "end_time": 1243,
+              "confidence": "",
+              "content": "the",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1243,
+              "end_time": 1583,
+              "confidence": "",
+              "content": "milk",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1583,
+              "end_time": 1623,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1623,
+              "end_time": 1703,
+              "confidence": "",
+              "content": "and",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1703,
+              "end_time": 2431,
+              "confidence": "",
+              "content": "espresso",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2431,
+              "end_time": 2432,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2432,
+              "end_time": 2673,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2673,
+              "end_time": 2883,
+              "confidence": "",
+              "content": "then",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2883,
+              "end_time": 3123,
+              "confidence": "",
+              "content": "lower",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3123,
+              "end_time": 3203,
+              "confidence": "",
+              "content": "the",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3203,
+              "end_time": 3573,
+              "confidence": "",
+              "content": "pitcher",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3573,
+              "end_time": 3653,
+              "confidence": "",
+              "content": "to",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 3653,
+              "end_time": 4023,
+              "confidence": "",
+              "content": "finish",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4023,
+              "end_time": 4163,
+              "confidence": "",
+              "content": "with",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4163,
+              "end_time": 4203,
+              "confidence": "",
+              "content": "a",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4203,
+              "end_time": 4613,
+              "confidence": "",
+              "content": "soft",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4613,
+              "end_time": 4863,
+              "confidence": "",
+              "content": "layer",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4863,
+              "end_time": 4953,
+              "confidence": "",
+              "content": "of",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4953,
+              "end_time": 5411,
+              "confidence": "",
+              "content": "foam",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5411,
+              "end_time": 5412,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5412,
+              "end_time": 5705,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5705,
+              "end_time": 6105,
+              "confidence": "",
+              "content": "",
+              "type": "pause",
+              "sentence_end": false,
+              "paragraph_end": false
+            }
+          ],
+          "sentences": [
+            {
+              "duration": 1703,
+              "content": "Start high to blend the milk and",
+              "type": ""
+            },
+            {
+              "duration": 1870,
+              "content": "espresso, then lower the pitcher",
+              "type": ""
+            },
+            {
+              "duration": 1380,
+              "content": "to finish with a soft layer of",
+              "type": ""
+            },
+            {
+              "duration": 752,
+              "content": "foam.",
+              "type": ""
+            },
+            {
+              "duration": 400,
+              "content": "",
+              "type": "pause"
+            }
+          ],
+          "highLights": [
+            {
+              "startIndex": 3,
+              "endIndex": 8,
+              "text": "blend the milk and espresso",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 12,
+              "endIndex": 14,
+              "text": "lower the pitcher",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 19,
+              "endIndex": 22,
+              "text": "soft layer of foam",
+              "color": "#40A6FF",
+              "fontSize": 72
+            }
+          ],
+          "originalKeywords": [
+            "blend the milk and espresso",
+            "lower the pitcher",
+            "soft layer of foam"
+          ],
+          "originalVoiceover": "Start high to blend the milk and espresso, then lower the pitcher to finish with a soft layer of foam."
+        },
+        "voiceOvers": [
+          {
+            "timelineUuid": "1558051859061612544",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051815608623104",
+            "sceneUuid": "1558051634997698565",
+            "category": "synthetic_voice_over",
+            "timeOffsetInProject": 35237,
+            "startTime": 33637,
+            "endTime": 39342,
+            "timelineDuration": 5705,
+            "voiceUuid": "228",
+            "voiceLocale": "en",
+            "volume": 1
+          }
+        ],
+        "layers": [],
+        "textOnScreen": {
+          "subtitleText": {
+            "styleNo": 105,
+            "textColor": "#FFFFFFFF",
+            "textSize": 72,
+            "textFont": "Roboto",
+            "textFontWeight": 400,
+            "textLetterSpacing": 0,
+            "textLineHeight": 20,
+            "textItalic": false,
+            "textUnderline": false,
+            "positionType": "bottom_center",
+            "textAlign": "center",
+            "textCaseStyle": "none",
+            "text": "Start high to blend the milk and\nespresso, then lower the pitcher\nto finish with a soft layer of\nfoam.\n",
+            "position": [
+              360,
+              960
+            ],
+            "width": 1200,
+            "textEnable": true,
+            "backgroundEnable": false,
+            "backgroundColor": "",
+            "backgroundRadius": 16,
+            "outlineEnable": false,
+            "outlineColor": "",
+            "outlineThickness": 40,
+            "shadowEnable": false,
+            "shadowColor": "",
+            "shadowDistance": 4,
+            "shadowAngle": 90,
+            "shadowBlur": 10,
+            "display": true,
+            "padding": 8,
+            "textLineSpace": 0,
+            "textStyle": {
+              "padding": 8,
+              "display": true,
+              "lineHeight": 1.2000000476837158,
+              "lineSpace": 0
+            },
+            "usePosition": false,
+            "cssStyle": {
+              "fontFamily": "Roboto",
+              "fontSize": 72,
+              "color": "#FFFFFFFF",
+              "fontStyle": "normal",
+              "fontWeight": "Regular",
+              "lineHeight": 20,
+              "lineSpace": 0,
+              "width": 1200,
+              "maxWidth": 1920,
+              "alignment": "center",
+              "letterSpacing": 0,
+              "textDecoration": "none",
+              "shadow": {
+                "enable": false,
+                "color": "",
+                "style": 0,
+                "distance": 4,
+                "angle": 90,
+                "blur": 10,
+                "offsetX": 0,
+                "offsetY": 4
+              },
+              "outline": {
+                "enable": false,
+                "color": "",
+                "width": 40
+              },
+              "background": {
+                "enable": false,
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8,
+                "style": 1
+              }
+            },
+            "fontUuid": "50",
+            "highlightEnable": false,
+            "highlightColor": "",
+            "highlightType": "keywords",
+            "highlightStyleType": "word_highlight",
+            "highlightSize": 72,
+            "animationEnable": false,
+            "animationType": "word_highlight",
+            "animationAttributes": {
+              "color": ""
+            },
+            "offsetTexts": [
+              {
+                "text": "Start high to blend the milk and",
+                "start": 0,
+                "end": 1703
+              },
+              {
+                "text": "espresso, then lower the pitcher",
+                "start": 1703,
+                "end": 3573
+              },
+              {
+                "text": "to finish with a soft layer of",
+                "start": 3573,
+                "end": 4953
+              },
+              {
+                "text": "foam.",
+                "start": 4953,
+                "end": 5705
+              },
+              {
+                "text": "",
+                "start": 5705,
+                "end": 6105
+              }
+            ],
+            "highlightCssStyle": {
+              "box": {
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8
+              },
+              "word": {
+                "color": "",
+                "fontSize": 72
+              },
+              "words": []
+            },
+            "highLightEnable": false,
+            "size": 72,
+            "caseStyle": "none",
+            "color": "#FFFFFFFF",
+            "font": "Roboto",
+            "zindex": 1001,
+            "align": "center",
+            "backgroundStyle": 0
+          }
+        },
+        "pauseTime": 400,
+        "transcriptModified": false,
+        "transcriptModifiedStatus": {
+          "changed": false,
+          "voiceRedo": false,
+          "recommendFootageRedo": false
+        },
+        "transitions": [],
+        "brollShorterPolicyKey": 1,
+        "holdLastFrame": true,
+        "bgmVolume": 0.5,
+        "metadata": {
+          "description": "Cappuccino pouring action in a clear side-angle close-up: milk stream starts from higher above the cup to integrate with espresso, then the pitcher lowers near the surface to lay a soft foam layer on top.",
+          "keywords": [
+            "cappuccino pour technique",
+            "latte style pouring",
+            "milk stream high then low",
+            "espresso and milk integration",
+            "foam layer finish",
+            "cappuccino"
+          ]
+        },
+        "brolls": [
+          {
+            "timelineUuid": "1558051635312271360",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051634829926400",
+            "sceneUuid": "1558051634997698565",
+            "category": "footage",
+            "timeOffsetInProject": 35237,
+            "startTime": 0,
+            "endTime": 6105,
+            "volume": 0,
+            "scale": 1,
+            "rotation": 0,
+            "speed": 1,
+            "effectiveDuration": 6105,
+            "backgroundFilling": "none",
+            "backgroundColor": "",
+            "visible": true,
+            "flipHorizontal": false,
+            "coordOffset": [
+              0,
+              0
+            ],
+            "audioExist": false,
+            "timelineDuration": 6105,
+            "kenburnsData": {
+              "aiKenBurns": []
+            },
+            "processStatus": "completed",
+            "status": "active",
+            "createdAt": 1791510057000,
+            "modifiedAt": 1791510110000,
+            "holdLastFrame": true,
+            "zindex": 105
+          }
+        ],
+        "arolls": [],
+        "training": {
+          "title": "Scene 6",
+          "videoUrl": "https://media.gettyimages.com/id/1253132515/video/pouring-a-cappuccino.mp4?b=1&s=mp4-640x640-gi&k=20&c=uOdVO6kzxKs9VI8A6ONgEDwDdCi1AHbHCFkHyc5YT2M=",
+          "narration": "Start high to blend the milk and espresso, then lower the pitcher to finish with a soft layer of foam.",
+          "next": "next"
+        }
+      },
+      {
+        "sceneUuid": "1558051634997698566",
+        "segmentUuid": "1558051635031252994",
+        "projectUuid": "1558050418641130057",
+        "name": "Scene 7",
+        "sceneType": "default",
+        "timeOffsetInProject": 41342,
+        "duration": 6268,
+        "transcript": {
+          "items": [
+            {
+              "start_time": 0,
+              "end_time": 378,
+              "confidence": "",
+              "content": "When",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 378,
+              "end_time": 588,
+              "confidence": "",
+              "content": "done",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 588,
+              "end_time": 796,
+              "confidence": "",
+              "content": "well",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 796,
+              "end_time": 797,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 797,
+              "end_time": 928,
+              "confidence": "",
+              "content": "you",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 928,
+              "end_time": 1138,
+              "confidence": "",
+              "content": "get",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1138,
+              "end_time": 1358,
+              "confidence": "",
+              "content": "three",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1358,
+              "end_time": 1688,
+              "confidence": "",
+              "content": "things",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1688,
+              "end_time": 1808,
+              "confidence": "",
+              "content": "in",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1808,
+              "end_time": 2018,
+              "confidence": "",
+              "content": "one",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2018,
+              "end_time": 2446,
+              "confidence": "",
+              "content": "cup",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2446,
+              "end_time": 2447,
+              "confidence": "",
+              "content": ":",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2447,
+              "end_time": 2528,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2528,
+              "end_time": 2768,
+              "confidence": "",
+              "content": "rich",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 2768,
+              "end_time": 3466,
+              "confidence": "",
+              "content": "espresso",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3466,
+              "end_time": 3467,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3467,
+              "end_time": 3540,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3540,
+              "end_time": 3578,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 3578,
+              "end_time": 4008,
+              "confidence": "",
+              "content": "silky",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4008,
+              "end_time": 4446,
+              "confidence": "",
+              "content": "milk",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4446,
+              "end_time": 4447,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4447,
+              "end_time": 4618,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 4618,
+              "end_time": 4728,
+              "confidence": "",
+              "content": "and",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4728,
+              "end_time": 4778,
+              "confidence": "",
+              "content": "a",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 4778,
+              "end_time": 5228,
+              "confidence": "",
+              "content": "velvety",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 5228,
+              "end_time": 5556,
+              "confidence": "",
+              "content": "cap",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5556,
+              "end_time": 5557,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5557,
+              "end_time": 5968,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 5968,
+              "end_time": 6268,
+              "confidence": "",
+              "content": "",
+              "type": "pause",
+              "sentence_end": false,
+              "paragraph_end": false
+            }
+          ],
+          "sentences": [
+            {
+              "duration": 1358,
+              "content": "When done well, you get three",
+              "type": ""
+            },
+            {
+              "duration": 2220,
+              "content": "things in one cup: rich espresso,",
+              "type": ""
+            },
+            {
+              "duration": 2390,
+              "content": "silky milk, and a velvety cap.",
+              "type": ""
+            },
+            {
+              "duration": 300,
+              "content": "",
+              "type": "pause"
+            }
+          ],
+          "highLights": [
+            {
+              "startIndex": 13,
+              "endIndex": 14,
+              "text": "rich espresso",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 18,
+              "endIndex": 19,
+              "text": "silky milk",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 24,
+              "endIndex": 25,
+              "text": "velvety cap",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 9,
+              "endIndex": 10,
+              "text": "one cup",
+              "color": "#40A6FF",
+              "fontSize": 72
+            }
+          ],
+          "originalKeywords": [
+            "rich espresso",
+            "silky milk",
+            "velvety cap",
+            "one cup"
+          ],
+          "originalVoiceover": "When done well, you get three things in one cup: rich espresso, silky milk, and a velvety cap."
+        },
+        "voiceOvers": [
+          {
+            "timelineUuid": "1558051859334242304",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051815608623104",
+            "sceneUuid": "1558051634997698566",
+            "category": "synthetic_voice_over",
+            "timeOffsetInProject": 41342,
+            "startTime": 39342,
+            "endTime": 45310,
+            "timelineDuration": 5968,
+            "voiceUuid": "228",
+            "voiceLocale": "en",
+            "volume": 1
+          }
+        ],
+        "layers": [],
+        "textOnScreen": {
+          "subtitleText": {
+            "styleNo": 105,
+            "textColor": "#FFFFFFFF",
+            "textSize": 72,
+            "textFont": "Roboto",
+            "textFontWeight": 400,
+            "textLetterSpacing": 0,
+            "textLineHeight": 20,
+            "textItalic": false,
+            "textUnderline": false,
+            "positionType": "bottom_center",
+            "textAlign": "center",
+            "textCaseStyle": "none",
+            "text": "When done well, you get three\nthings in one cup: rich espresso,\nsilky milk, and a velvety cap.\n",
+            "position": [
+              360,
+              960
+            ],
+            "width": 1200,
+            "textEnable": true,
+            "backgroundEnable": false,
+            "backgroundColor": "",
+            "backgroundRadius": 16,
+            "outlineEnable": false,
+            "outlineColor": "",
+            "outlineThickness": 40,
+            "shadowEnable": false,
+            "shadowColor": "",
+            "shadowDistance": 4,
+            "shadowAngle": 90,
+            "shadowBlur": 10,
+            "display": true,
+            "padding": 8,
+            "textLineSpace": 0,
+            "textStyle": {
+              "padding": 8,
+              "display": true,
+              "lineHeight": 1.2000000476837158,
+              "lineSpace": 0
+            },
+            "usePosition": false,
+            "cssStyle": {
+              "fontFamily": "Roboto",
+              "fontSize": 72,
+              "color": "#FFFFFFFF",
+              "fontStyle": "normal",
+              "fontWeight": "Regular",
+              "lineHeight": 20,
+              "lineSpace": 0,
+              "width": 1200,
+              "maxWidth": 1920,
+              "alignment": "center",
+              "letterSpacing": 0,
+              "textDecoration": "none",
+              "shadow": {
+                "enable": false,
+                "color": "",
+                "style": 0,
+                "distance": 4,
+                "angle": 90,
+                "blur": 10,
+                "offsetX": 0,
+                "offsetY": 4
+              },
+              "outline": {
+                "enable": false,
+                "color": "",
+                "width": 40
+              },
+              "background": {
+                "enable": false,
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8,
+                "style": 1
+              }
+            },
+            "fontUuid": "50",
+            "highlightEnable": false,
+            "highlightColor": "",
+            "highlightType": "keywords",
+            "highlightStyleType": "word_highlight",
+            "highlightSize": 72,
+            "animationEnable": false,
+            "animationType": "word_highlight",
+            "animationAttributes": {
+              "color": ""
+            },
+            "offsetTexts": [
+              {
+                "text": "When done well, you get three",
+                "start": 0,
+                "end": 1358
+              },
+              {
+                "text": "things in one cup: rich espresso,",
+                "start": 1358,
+                "end": 3578
+              },
+              {
+                "text": "silky milk, and a velvety cap.",
+                "start": 3578,
+                "end": 5968
+              },
+              {
+                "text": "",
+                "start": 5968,
+                "end": 6268
+              }
+            ],
+            "highlightCssStyle": {
+              "box": {
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8
+              },
+              "word": {
+                "color": "",
+                "fontSize": 72
+              },
+              "words": []
+            },
+            "highLightEnable": false,
+            "size": 72,
+            "caseStyle": "none",
+            "color": "#FFFFFFFF",
+            "font": "Roboto",
+            "zindex": 1001,
+            "align": "center",
+            "backgroundStyle": 0
+          }
+        },
+        "pauseTime": 300,
+        "transcriptModified": false,
+        "transcriptModifiedStatus": {
+          "changed": false,
+          "voiceRedo": false,
+          "recommendFootageRedo": false
+        },
+        "transitions": [],
+        "brollShorterPolicyKey": 1,
+        "holdLastFrame": true,
+        "bgmVolume": 0.5,
+        "metadata": {
+          "description": "Cappuccino reveal shot: slow push-in on the cup as the surface settles, then a spoon gently lifts foam to show contrast between rich espresso below, silky milk, and a velvety cap under natural light.",
+          "keywords": [
+            "cappuccino layers in cup",
+            "espresso milk foam texture",
+            "close up crema and foam",
+            "spoon through cappuccino",
+            "velvety microfoam cap",
+            "cappuccino"
+          ]
+        },
+        "brolls": [
+          {
+            "timelineUuid": "1558051635333242880",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051634897035264",
+            "sceneUuid": "1558051634997698566",
+            "category": "footage",
+            "timeOffsetInProject": 41342,
+            "startTime": 0,
+            "endTime": 6268,
+            "volume": 0,
+            "scale": 1,
+            "rotation": 0,
+            "speed": 1,
+            "effectiveDuration": 6268,
+            "backgroundFilling": "none",
+            "backgroundColor": "",
+            "visible": true,
+            "flipHorizontal": false,
+            "coordOffset": [
+              0,
+              0
+            ],
+            "audioExist": false,
+            "timelineDuration": 6268,
+            "kenburnsData": {
+              "aiKenBurns": []
+            },
+            "processStatus": "completed",
+            "status": "active",
+            "createdAt": 1791510057000,
+            "modifiedAt": 1791510110000,
+            "holdLastFrame": true,
+            "zindex": 105
+          }
+        ],
+        "arolls": [],
+        "training": {
+          "title": "Scene 7",
+          "videoUrl": "https://media.gettyimages.com/id/482738254/video/barista-pours-a-cappuccino-slow-motion.mp4?b=1&s=mp4-640x640-gi&k=20&c=GFpDOzH0fe8xMSvPX3fz8qf93knR9b1YKX9Rs2vR4qo=",
+          "narration": "When done well, you get three things in one cup: rich espresso, silky milk, and a velvety cap.",
+          "next": "next",
+          "quiz": {
+            "id": "cappuccino-question-6",
+            "title": "如何完成倒奶？",
+            "graded": true,
+            "correct": 1,
+            "feedback": "先从高处倒入混合，再降低奶缸完成。",
+            "options": [
+              {
+                "text": "一直保持奶缸在高处",
+                "target": "default"
+              },
+              {
+                "text": "降低奶缸，形成柔软的奶泡层",
+                "target": "default"
+              },
+              {
+                "text": "等牛奶冷却再倒",
+                "target": "default"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sceneUuid": "1558051634997698567",
+        "segmentUuid": "1558051635031252994",
+        "projectUuid": "1558050418641130057",
+        "name": "Scene 8",
+        "sceneType": "default",
+        "timeOffsetInProject": 47610,
+        "duration": 2758,
+        "transcript": {
+          "items": [
+            {
+              "start_time": 0,
+              "end_time": 460,
+              "confidence": "",
+              "content": "That’s",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 460,
+              "end_time": 490,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 490,
+              "end_time": 1238,
+              "confidence": "",
+              "content": "cappuccino",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1238,
+              "end_time": 1239,
+              "confidence": "",
+              "content": ",",
+              "type": "punctuation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1239,
+              "end_time": 1390,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 1390,
+              "end_time": 1640,
+              "confidence": "",
+              "content": "every",
+              "type": "pronunciation",
+              "sentence_end": false
+            },
+            {
+              "start_time": 1640,
+              "end_time": 2038,
+              "confidence": "",
+              "content": "time",
+              "type": "pronunciation",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2038,
+              "end_time": 2039,
+              "confidence": "",
+              "content": ".",
+              "type": "punctuation",
+              "sentence_end": true,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2039,
+              "end_time": 2258,
+              "confidence": "",
+              "content": "",
+              "type": "silent",
+              "sentence_end": false,
+              "paragraph_end": false
+            },
+            {
+              "start_time": 2258,
+              "end_time": 2758,
+              "confidence": "",
+              "content": "",
+              "type": "pause",
+              "sentence_end": false,
+              "paragraph_end": false
+            }
+          ],
+          "sentences": [
+            {
+              "duration": 2258,
+              "content": "That’s cappuccino, every time.",
+              "type": ""
+            },
+            {
+              "duration": 500,
+              "content": "",
+              "type": "pause"
+            }
+          ],
+          "highLights": [
+            {
+              "startIndex": 2,
+              "endIndex": 2,
+              "text": "cappuccino",
+              "color": "#40A6FF",
+              "fontSize": 72
+            },
+            {
+              "startIndex": 5,
+              "endIndex": 6,
+              "text": "every time",
+              "color": "#40A6FF",
+              "fontSize": 72
+            }
+          ],
+          "originalKeywords": [
+            "cappuccino",
+            "every time"
+          ],
+          "originalVoiceover": "That’s cappuccino, every time."
+        },
+        "voiceOvers": [
+          {
+            "timelineUuid": "1558051859585900544",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051815608623104",
+            "sceneUuid": "1558051634997698567",
+            "category": "synthetic_voice_over",
+            "timeOffsetInProject": 47610,
+            "startTime": 45310,
+            "endTime": 47568,
+            "timelineDuration": 2258,
+            "voiceUuid": "228",
+            "voiceLocale": "en",
+            "volume": 1
+          }
+        ],
+        "layers": [],
+        "textOnScreen": {
+          "subtitleText": {
+            "styleNo": 105,
+            "textColor": "#FFFFFFFF",
+            "textSize": 72,
+            "textFont": "Roboto",
+            "textFontWeight": 400,
+            "textLetterSpacing": 0,
+            "textLineHeight": 20,
+            "textItalic": false,
+            "textUnderline": false,
+            "positionType": "bottom_center",
+            "textAlign": "center",
+            "textCaseStyle": "none",
+            "text": "That’s cappuccino, every time.\n",
+            "position": [
+              360,
+              960
+            ],
+            "width": 1200,
+            "textEnable": true,
+            "backgroundEnable": false,
+            "backgroundColor": "",
+            "backgroundRadius": 16,
+            "outlineEnable": false,
+            "outlineColor": "",
+            "outlineThickness": 40,
+            "shadowEnable": false,
+            "shadowColor": "",
+            "shadowDistance": 4,
+            "shadowAngle": 90,
+            "shadowBlur": 10,
+            "display": true,
+            "padding": 8,
+            "textLineSpace": 0,
+            "textStyle": {
+              "padding": 8,
+              "display": true,
+              "lineHeight": 1.2000000476837158,
+              "lineSpace": 0
+            },
+            "usePosition": false,
+            "cssStyle": {
+              "fontFamily": "Roboto",
+              "fontSize": 72,
+              "color": "#FFFFFFFF",
+              "fontStyle": "normal",
+              "fontWeight": "Regular",
+              "lineHeight": 20,
+              "lineSpace": 0,
+              "width": 1200,
+              "maxWidth": 1920,
+              "alignment": "center",
+              "letterSpacing": 0,
+              "textDecoration": "none",
+              "shadow": {
+                "enable": false,
+                "color": "",
+                "style": 0,
+                "distance": 4,
+                "angle": 90,
+                "blur": 10,
+                "offsetX": 0,
+                "offsetY": 4
+              },
+              "outline": {
+                "enable": false,
+                "color": "",
+                "width": 40
+              },
+              "background": {
+                "enable": false,
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8,
+                "style": 1
+              }
+            },
+            "fontUuid": "50",
+            "highlightEnable": false,
+            "highlightColor": "",
+            "highlightType": "keywords",
+            "highlightStyleType": "word_highlight",
+            "highlightSize": 72,
+            "animationEnable": false,
+            "animationType": "word_highlight",
+            "animationAttributes": {
+              "color": ""
+            },
+            "offsetTexts": [
+              {
+                "text": "That’s cappuccino, every time.",
+                "start": 0,
+                "end": 2258
+              },
+              {
+                "text": "",
+                "start": 2258,
+                "end": 2758
+              }
+            ],
+            "highlightCssStyle": {
+              "box": {
+                "color": "",
+                "radius": 16,
+                "paddingX": 8,
+                "paddingY": 8
+              },
+              "word": {
+                "color": "",
+                "fontSize": 72
+              },
+              "words": []
+            },
+            "highLightEnable": false,
+            "size": 72,
+            "caseStyle": "none",
+            "color": "#FFFFFFFF",
+            "font": "Roboto",
+            "zindex": 1001,
+            "align": "center",
+            "backgroundStyle": 0
+          }
+        },
+        "pauseTime": 500,
+        "transcriptModified": false,
+        "transcriptModifiedStatus": {
+          "changed": false,
+          "voiceRedo": false,
+          "recommendFootageRedo": false
+        },
+        "transitions": [],
+        "brollShorterPolicyKey": 1,
+        "holdLastFrame": true,
+        "bgmVolume": 0.5,
+        "metadata": {
+          "description": "Cappuccino hero ending: cinematic close-up of the finished cappuccino on a clean countertop with subtle steam rising, espresso machine softly blurred in the background for a calm, confident final frame.",
+          "keywords": [
+            "cappuccino final shot",
+            "cappuccino hero close up",
+            "steaming cup on counter",
+            "home barista coffee finish",
+            "natural light cafe style",
+            "cappuccino"
+          ]
+        },
+        "brolls": [
+          {
+            "timelineUuid": "1558051635350020097",
+            "projectUuid": "1558050418641130057",
+            "assetUuid": "1558051634951561216",
+            "sceneUuid": "1558051634997698567",
+            "category": "footage",
+            "timeOffsetInProject": 47610,
+            "startTime": 0,
+            "endTime": 2758,
+            "volume": 0,
+            "scale": 1,
+            "rotation": 0,
+            "speed": 1,
+            "effectiveDuration": 2758,
+            "backgroundFilling": "none",
+            "backgroundColor": "",
+            "visible": true,
+            "flipHorizontal": false,
+            "coordOffset": [
+              0,
+              0
+            ],
+            "audioExist": false,
+            "timelineDuration": 2758,
+            "kenburnsData": {
+              "aiKenBurns": []
+            },
+            "processStatus": "completed",
+            "status": "active",
+            "createdAt": 1791510057000,
+            "modifiedAt": 1791510110000,
+            "holdLastFrame": true,
+            "zindex": 105
+          }
+        ],
+        "arolls": [],
+        "training": {
+          "title": "Scene 8",
+          "videoUrl": "https://media.gettyimages.com/id/1354721431/video/making-cappuccino-closeup.mp4?b=1&s=mp4-640x640-gi&k=20&c=ywB7NTC8sZkqznXc_gJI2k9N6aHvJaTkUlqEnMJPXng=",
+          "narration": "That’s cappuccino, every time.",
+          "next": "end"
+        }
+      }
+    ],
+    "assets": {
+      "1558051634561490944": {
+        "assetUuid": "1558051634561490944",
+        "sourceEntityUuid": "7000000005897276",
+        "mediaType": "video",
+        "assetType": "imported_from_stock",
+        "title": "Process of making cappucino",
+        "assetLink": "https://media.gettyimages.com/id/973116484/video/process-of-making-cappucino.mp4?b=1&s=mp4-640x640-gi&k=20&c=ipb6JDNJet5J6JAffARqGOw9tIdPD5CfUZ0Naz0JS1o=",
+        "thumbnailLink": "https://media.gettyimages.com/id/973116484/video/process-of-making-cappucino.jpg?b=1&s=192x192&k=20&c=2MCBtKDt8S64UQJ5m22DbKWDfh_23q89lGF-emyb56I=",
+        "duration": 17201,
+        "width": 3840,
+        "height": 2160,
+        "previewLink": "https://media.gettyimages.com/id/973116484/video/process-of-making-cappucino.mp4?b=1&s=mp4-640x640-gi&k=20&c=ipb6JDNJet5J6JAffARqGOw9tIdPD5CfUZ0Naz0JS1o=",
+        "providerInfo": {
+          "license": "Getty Images",
+          "providerCode": "Getty Images",
+          "providerLink": "https://www.gettyimages.com/rights-and-clearance",
+          "licenseDes": "Getty Images",
+          "licenseLink": "https://www.gettyimages.com/rights-and-clearance"
+        },
+        "audioExist": false,
+        "usage": "creative",
+        "premium": true,
+        "expired": false
+      },
+      "1558051634699902976": {
+        "assetUuid": "1558051634699902976",
+        "sourceEntityUuid": "7000000002370449",
+        "mediaType": "video",
+        "assetType": "imported_from_stock",
+        "title": "Process of making cappuccino",
+        "assetLink": "https://media.gettyimages.com/id/959667322/video/process-of-making-cappuccino.mp4?b=1&s=mp4-640x640-gi&k=20&c=SDzvzwtsG-0_VAJgxSJUwhAvgvPVx9mUoQx6qak9XWc=",
+        "thumbnailLink": "https://media.gettyimages.com/id/959667322/video/process-of-making-cappuccino.jpg?b=1&s=192x192&k=20&c=TNfXOVwZ-AcgdTQHd2AKVnjjCVi4aQRAgQcM0-JrGKQ=",
+        "duration": 9801,
+        "width": 3840,
+        "height": 2160,
+        "previewLink": "https://media.gettyimages.com/id/959667322/video/process-of-making-cappuccino.mp4?b=1&s=mp4-640x640-gi&k=20&c=SDzvzwtsG-0_VAJgxSJUwhAvgvPVx9mUoQx6qak9XWc=",
+        "providerInfo": {
+          "license": "Getty Images",
+          "providerCode": "Getty Images",
+          "providerLink": "https://www.gettyimages.com/rights-and-clearance",
+          "licenseDes": "Getty Images",
+          "licenseLink": "https://www.gettyimages.com/rights-and-clearance"
+        },
+        "audioExist": false,
+        "usage": "creative",
+        "premium": true,
+        "expired": false
+      },
+      "1558051815608623104": {
+        "assetUuid": "1558051815608623104",
+        "mediaType": "audio",
+        "assetType": "scene_synthetic_voice_over",
+        "assetLink": "https://cn-northwest-1-dev-01.s3.cn-northwest-1.amazonaws.com.cn/880/976789276857466880/1558050418641130057/openai_tts_14e4512c0f72a697457d26df4be5fad4_iJAoeKCm.mp3?response-content-type=application%2Foctet-stream&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261009T000000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=90000&X-Amz-Credential=AKIAZV34UIWCI4M3B252%2F20261009%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Signature=413c3737fb56974d127aab006e7ae9841ec3a7ac2358af59d52889bdf450de65",
+        "audioLink": "https://cn-northwest-1-dev-01.s3.cn-northwest-1.amazonaws.com.cn/880/976789276857466880/1558050418641130057/openai_tts_14e4512c0f72a697457d26df4be5fad4_iJAoeKCm.mp3?response-content-type=application%2Foctet-stream&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261009T000000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=90000&X-Amz-Credential=AKIAZV34UIWCI4M3B252%2F20261009%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Signature=413c3737fb56974d127aab006e7ae9841ec3a7ac2358af59d52889bdf450de65",
+        "duration": 47568,
+        "previewLink": "https://cn-northwest-1-dev-01.s3.cn-northwest-1.amazonaws.com.cn/880/976789276857466880/1558050418641130057/openai_tts_14e4512c0f72a697457d26df4be5fad4_iJAoeKCm.mp3?response-content-type=application%2Foctet-stream&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261009T000000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=90000&X-Amz-Credential=AKIAZV34UIWCI4M3B252%2F20261009%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Signature=413c3737fb56974d127aab006e7ae9841ec3a7ac2358af59d52889bdf450de65",
+        "audioExist": true,
+        "premium": false,
+        "expired": false
+      },
+      "1558051634628599808": {
+        "assetUuid": "1558051634628599808",
+        "sourceEntityUuid": "7000000006192359",
+        "mediaType": "video",
+        "assetType": "imported_from_stock",
+        "title": "Espresso shot close up.",
+        "assetLink": "https://media.gettyimages.com/id/1282332132/video/espresso-shot-close-up.mp4?b=1&s=mp4-640x640-gi&k=20&c=Z3k8EuOQObZmTUTGL9wBTUlPnTO-u6nfrVGrM0Lw3fM=",
+        "thumbnailLink": "https://media.gettyimages.com/id/1282332132/video/espresso-shot-close-up.jpg?b=1&s=192x192&k=20&c=6Bj_iLErCUMzG9KgID1CAdYY7USJN4xqjOJv948P3Ro=",
+        "duration": 24626,
+        "width": 4096,
+        "height": 2304,
+        "previewLink": "https://media.gettyimages.com/id/1282332132/video/espresso-shot-close-up.mp4?b=1&s=mp4-640x640-gi&k=20&c=Z3k8EuOQObZmTUTGL9wBTUlPnTO-u6nfrVGrM0Lw3fM=",
+        "providerInfo": {
+          "license": "Getty Images",
+          "providerCode": "Getty Images",
+          "providerLink": "https://www.gettyimages.com/rights-and-clearance",
+          "licenseDes": "Getty Images",
+          "licenseLink": "https://www.gettyimages.com/rights-and-clearance"
+        },
+        "audioExist": false,
+        "usage": "creative",
+        "premium": true,
+        "expired": false
+      },
+      "1558051634779594752": {
+        "assetUuid": "1558051634779594752",
+        "sourceEntityUuid": "7000000003883516",
+        "mediaType": "video",
+        "assetType": "imported_from_stock",
+        "title": "Close-up. A barista warms milk to make a cappuccino coffee drink. Tamping ground coffee. A professional bartender pours warmed milk into a transparent glass. Latte",
+        "assetLink": "https://media.gettyimages.com/id/1367321491/video/close-up-a-barista-warms-milk-to-make-a-cappuccino-coffee-drink-tamping-ground-coffee-a.mp4?b=1&s=mp4-640x640-gi&k=20&c=G6EpVhO6DQznHIb0_Xys5OPFT7T0gTAlc-lB_4VcYHE=",
+        "thumbnailLink": "https://media.gettyimages.com/id/1367321491/video/close-up-a-barista-warms-milk-to-make-a-cappuccino-coffee-drink-tamping-ground-coffee-a.jpg?b=1&s=192x192&k=20&c=vSdLgbdrsy97wFUTYD7ceyLVp8caVKbRlx0rtMYXQG4=",
+        "duration": 9701,
+        "width": 3840,
+        "height": 2160,
+        "previewLink": "https://media.gettyimages.com/id/1367321491/video/close-up-a-barista-warms-milk-to-make-a-cappuccino-coffee-drink-tamping-ground-coffee-a.mp4?b=1&s=mp4-640x640-gi&k=20&c=G6EpVhO6DQznHIb0_Xys5OPFT7T0gTAlc-lB_4VcYHE=",
+        "providerInfo": {
+          "license": "Getty Images",
+          "providerCode": "Getty Images",
+          "providerLink": "https://www.gettyimages.com/rights-and-clearance",
+          "licenseDes": "Getty Images",
+          "licenseLink": "https://www.gettyimages.com/rights-and-clearance"
+        },
+        "audioExist": false,
+        "usage": "creative",
+        "premium": true,
+        "expired": false
+      },
+      "1558051637547835392": {
+        "assetUuid": "1558051637547835392",
+        "sourceEntityUuid": "8000000000000093",
+        "mediaType": "audio",
+        "assetType": "imported_from_stock",
+        "title": "A New Start",
+        "assetLink": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/audio/rsqUhk0trk23etvzn/audioblocks-a-new-start_HG3lnQzAD_WM.mp3",
+        "thumbnailLink": "",
+        "duration": 145000,
+        "audioExist": false,
+        "premium": true,
+        "expired": false
+      },
+      "1558051634829926400": {
+        "assetUuid": "1558051634829926400",
+        "sourceEntityUuid": "7000000007358743",
+        "mediaType": "video",
+        "assetType": "imported_from_stock",
+        "title": "Pouring a cappuccino",
+        "assetLink": "https://media.gettyimages.com/id/1253132515/video/pouring-a-cappuccino.mp4?b=1&s=mp4-640x640-gi&k=20&c=uOdVO6kzxKs9VI8A6ONgEDwDdCi1AHbHCFkHyc5YT2M=",
+        "thumbnailLink": "https://media.gettyimages.com/id/1253132515/video/pouring-a-cappuccino.jpg?b=1&s=192x192&k=20&c=mYEFBZ9m_RgswwDyrRad6Ig_r5rmZhVLAE2fnXoc910=",
+        "duration": 11935,
+        "width": 1920,
+        "height": 1080,
+        "previewLink": "https://media.gettyimages.com/id/1253132515/video/pouring-a-cappuccino.mp4?b=1&s=mp4-640x640-gi&k=20&c=uOdVO6kzxKs9VI8A6ONgEDwDdCi1AHbHCFkHyc5YT2M=",
+        "providerInfo": {
+          "license": "Getty Images",
+          "providerCode": "Getty Images",
+          "providerLink": "https://www.gettyimages.com/rights-and-clearance",
+          "licenseDes": "Getty Images",
+          "licenseLink": "https://www.gettyimages.com/rights-and-clearance"
+        },
+        "audioExist": false,
+        "usage": "creative",
+        "premium": true,
+        "expired": false
+      },
+      "1558051634951561216": {
+        "assetUuid": "1558051634951561216",
+        "sourceEntityUuid": "7000000004346892",
+        "mediaType": "video",
+        "assetType": "imported_from_stock",
+        "title": "Making Cappuccino Closeup",
+        "assetLink": "https://media.gettyimages.com/id/1354721431/video/making-cappuccino-closeup.mp4?b=1&s=mp4-640x640-gi&k=20&c=ywB7NTC8sZkqznXc_gJI2k9N6aHvJaTkUlqEnMJPXng=",
+        "thumbnailLink": "https://media.gettyimages.com/id/1354721431/video/making-cappuccino-closeup.jpg?b=1&s=192x192&k=20&c=KbLOKxRe-GZ6sF390nZN_7btWfwWkrtjT_CGCClG5E0=",
+        "duration": 59701,
+        "width": 3840,
+        "height": 2160,
+        "previewLink": "https://media.gettyimages.com/id/1354721431/video/making-cappuccino-closeup.mp4?b=1&s=mp4-640x640-gi&k=20&c=ywB7NTC8sZkqznXc_gJI2k9N6aHvJaTkUlqEnMJPXng=",
+        "providerInfo": {
+          "license": "Getty Images",
+          "providerCode": "Getty Images",
+          "providerLink": "https://www.gettyimages.com/rights-and-clearance",
+          "licenseDes": "Getty Images",
+          "licenseLink": "https://www.gettyimages.com/rights-and-clearance"
+        },
+        "audioExist": false,
+        "usage": "creative",
+        "premium": true,
+        "expired": false
+      },
+      "1558051634498576384": {
+        "assetUuid": "1558051634498576384",
+        "sourceEntityUuid": "7000000006081235",
+        "mediaType": "video",
+        "assetType": "imported_from_stock",
+        "title": "A cappuccino cup placed on a saucer in a cozy cafe setting.",
+        "assetLink": "https://media.gettyimages.com/id/2022716167/video/a-cappuccino-cup-placed-on-a-saucer-in-a-cozy-cafe-setting.mp4?b=1&s=mp4-640x640-gi&k=20&c=5uBL2xIVCKT0pmSPHdOUaJKA1xuADbYRs5iBwU2nhFQ=",
+        "thumbnailLink": "https://media.gettyimages.com/id/2022716167/video/a-cappuccino-cup-placed-on-a-saucer-in-a-cozy-cafe-setting.jpg?b=1&s=192x192&k=20&c=daWcpPxlhdEBRWnegVLDWOmjVS3AA0duqBabkg9T5Ro=",
+        "duration": 6651,
+        "width": 3840,
+        "height": 2160,
+        "previewLink": "https://media.gettyimages.com/id/2022716167/video/a-cappuccino-cup-placed-on-a-saucer-in-a-cozy-cafe-setting.mp4?b=1&s=mp4-640x640-gi&k=20&c=5uBL2xIVCKT0pmSPHdOUaJKA1xuADbYRs5iBwU2nhFQ=",
+        "providerInfo": {
+          "license": "Getty Images",
+          "providerCode": "Getty Images",
+          "providerLink": "https://www.gettyimages.com/rights-and-clearance",
+          "licenseDes": "Getty Images",
+          "licenseLink": "https://www.gettyimages.com/rights-and-clearance"
+        },
+        "audioExist": false,
+        "usage": "creative",
+        "premium": true,
+        "expired": false
+      },
+      "1558051634897035264": {
+        "assetUuid": "1558051634897035264",
+        "sourceEntityUuid": "7000000002808292",
+        "mediaType": "video",
+        "assetType": "imported_from_stock",
+        "title": "Barista pours a cappuccino - CU, slow motion",
+        "assetLink": "https://media.gettyimages.com/id/482738254/video/barista-pours-a-cappuccino-slow-motion.mp4?b=1&s=mp4-640x640-gi&k=20&c=GFpDOzH0fe8xMSvPX3fz8qf93knR9b1YKX9Rs2vR4qo=",
+        "thumbnailLink": "https://media.gettyimages.com/id/482738254/video/barista-pours-a-cappuccino-slow-motion.jpg?b=1&s=192x192&k=20&c=15wCr5T46LlWKN5u0lB246RH_ftprSTGdXqprTCB-J8=",
+        "duration": 24835,
+        "width": 1920,
+        "height": 1080,
+        "previewLink": "https://media.gettyimages.com/id/482738254/video/barista-pours-a-cappuccino-slow-motion.mp4?b=1&s=mp4-640x640-gi&k=20&c=GFpDOzH0fe8xMSvPX3fz8qf93knR9b1YKX9Rs2vR4qo=",
+        "providerInfo": {
+          "license": "Getty Images",
+          "providerCode": "Getty Images",
+          "providerLink": "https://www.gettyimages.com/rights-and-clearance",
+          "licenseDes": "Getty Images",
+          "licenseLink": "https://www.gettyimages.com/rights-and-clearance"
+        },
+        "audioExist": false,
+        "usage": "creative",
+        "premium": true,
+        "expired": false
+      }
+    },
+    "status": "active",
+    "text": {
+      "titleText": {
+        "headerText": {
+          "styleNo": 103,
+          "color": "#3773F6",
+          "size": 96,
+          "textSize": 96,
+          "textColor": "#3773F6",
+          "textFont": "Roboto",
+          "font": "Roboto",
+          "textItalic": false,
+          "textUnderline": false,
+          "textFontWeight": 400,
+          "textLetterSpacing": 0,
+          "textLineHeight": 20,
+          "textCaseStyle": "none",
+          "textEnable": true,
+          "backgroundEnable": true,
+          "backgroundColor": "#FFCF56",
+          "backgroundRadius": 16,
+          "outlineEnable": false,
+          "outlineColor": "",
+          "outlineThickness": 40,
+          "shadowEnable": false,
+          "shadowColor": "",
+          "shadowDistance": 5,
+          "shadowAngle": 90,
+          "shadowBlur": 5,
+          "textAlign": "left",
+          "fontUuid": "50",
+          "positionType": "top_left",
+          "caseStyle": "none",
+          "align": "left"
+        },
+        "bodyText": {
+          "styleNo": 104,
+          "color": "#FFFFFF",
+          "size": 72,
+          "textSize": 72,
+          "textColor": "#FFFFFF",
+          "textFont": "Roboto",
+          "font": "Roboto",
+          "textItalic": false,
+          "textUnderline": false,
+          "textFontWeight": 400,
+          "textLetterSpacing": 0,
+          "textLineHeight": 20,
+          "textCaseStyle": "none",
+          "textEnable": true,
+          "backgroundEnable": true,
+          "backgroundColor": "#4CAF50",
+          "backgroundRadius": 16,
+          "outlineEnable": false,
+          "outlineColor": "",
+          "outlineThickness": 40,
+          "shadowEnable": false,
+          "shadowColor": "",
+          "shadowDistance": 5,
+          "shadowAngle": 90,
+          "shadowBlur": 5,
+          "textAlign": "left",
+          "fontUuid": "50",
+          "positionType": "middle_left",
+          "caseStyle": "none",
+          "align": "left"
+        },
+        "subtitleText": {
+          "styleNo": 105,
+          "color": "#FFFFFFFF",
+          "size": 72,
+          "textSize": 72,
+          "textColor": "#FFFFFFFF",
+          "textFont": "Roboto",
+          "font": "Roboto",
+          "textItalic": false,
+          "textUnderline": false,
+          "textFontWeight": 400,
+          "textLetterSpacing": 0,
+          "textLineHeight": 20,
+          "textCaseStyle": "none",
+          "textEnable": true,
+          "backgroundEnable": false,
+          "backgroundColor": "",
+          "backgroundRadius": 16,
+          "outlineEnable": false,
+          "outlineColor": "",
+          "outlineThickness": 40,
+          "shadowEnable": false,
+          "shadowColor": "",
+          "shadowDistance": 4,
+          "shadowAngle": 90,
+          "shadowBlur": 10,
+          "textAlign": "center",
+          "fontUuid": "50",
+          "positionType": "bottom_center",
+          "highlightEnable": false,
+          "highlightSize": 72,
+          "align": "center",
+          "animationEnable": false,
+          "animationType": "word_highlight",
+          "animationAttributes": {
+            "color": ""
+          },
+          "pace": 33,
+          "highlightType": "keywords",
+          "highlightStyleType": "word_highlight",
+          "textAlignEnum": "center",
+          "caseStyle": "none"
+        },
+        "sceneBgStyle": {
+          "backgroundColor": "#3773F6",
+          "backgroundImage": "https://visla-cn-public.s3.cn-northwest-1.amazonaws.com.cn/static/bg-img/bg-img-7.png"
+        },
+        "burnSubtitles": true,
+        "useAiRecommendInHeader": false,
+        "useAiRecommendInBody": false
+      }
+    },
+    "style": {
+      "sceneBgStyle": {
+        "backgroundColor": "#3773F6",
+        "backgroundImage": "https://visla-cn-public.s3.cn-northwest-1.amazonaws.com.cn/static/bg-img/bg-img-7.png?response-content-type=application%2Foctet-stream&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261009T000000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=90000&X-Amz-Credential=AKIAZV34UIWCI4M3B252%2F20261009%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Signature=edbfbb59fd8969e2b0174f6ff2344731ce60e4353d69d4c1a24423ec900f71a0"
+      },
+      "burnSubtitles": true
+    },
+    "syntheticVoices": {
+      "1558051815608623104": {
+        "uuid": "228",
+        "locale": "en",
+        "localeName": "English (all)",
+        "voiceName": "onyx",
+        "voiceSpeakerName": "Onyx",
+        "gender": "Male",
+        "voiceVendor": "openai",
+        "voiceStyle": "general",
+        "voiceUrl": "https://visla-cn-public.s3.cn-northwest-1.amazonaws.com.cn/synthetic-voice/en/en-onyx.mp3",
+        "duration": 11208,
+        "advancedAvatarVoiceUrl": "https://visla-cn-public.s3.cn-northwest-1.amazonaws.com.cn/advanced-avatar-voice/en/en-onyx.mp3",
+        "advancedAvatarDuration": 6408,
+        "favorite": false
+      }
+    },
+    "projectConfig": {
+      "projectType": "idea-to-video",
+      "style": {
+        "aspectRatio": "16:9",
+        "thumbnail": "1558051612369428480",
+        "wallpaper": {
+          "backgroundColor": "#3773F6",
+          "backgroundImage": ""
+        }
+      },
+      "text": {
+        "header": {
+          "useAiRecommend": false,
+          "styleNo": 103,
+          "positionType": "top_left",
+          "size": 96,
+          "aiTextOverlay": "How to Make a Cappuccino"
+        },
+        "body": {
+          "useAiRecommend": false,
+          "styleNo": 104,
+          "positionType": "middle_left",
+          "size": 72,
+          "aiSegmentTexts": [
+            {
+              "segmentId": "1558051635031252992",
+              "textOverlay": "Espresso Setup First"
+            },
+            {
+              "segmentId": "1558051635031252993",
+              "textOverlay": "Steam the Milk"
+            },
+            {
+              "segmentId": "1558051635031252994",
+              "textOverlay": "Perfect Cappuccino Finish"
+            }
+          ]
+        }
+      },
+      "subtitle": {
+        "burnSubtitles": true,
+        "pace": 33,
+        "positionType": "bottom_center",
+        "size": 72,
+        "styleNo": 105
+      }
+    },
+    "syntheticAll": true,
+    "videoFormat": 1,
+    "brollShorterPolicyKey": 1,
+    "peVersion": "1.2.1218-fc6ed1ea-20261002_013513",
+    "peVersionCode": 0,
+    "storageType": "PJSON",
+    "training": {
+      "version": 1,
+      "title": "制作卡布奇诺",
+      "passPercent": 67
+    }
+  }
+}

@@ -6,9 +6,6 @@
     if (value === '') return true;
     try { return ['https:', 'http:'].includes(new URL(value).protocol); } catch (_) { return false; }
   }
-  function validImage(value) {
-    return typeof value === 'string' && value !== '' && (validVideo(value) || /^(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_-]+\.(?:png|jpe?g|webp|gif)$/i.test(value));
-  }
   function validate(course) {
     check(isObject(course) && course.version === 1, '不支持的课程格式，要求 version=1');
     check(validId(course.id), '课程 ID 无效');
@@ -24,7 +21,6 @@
       check(typeof scene.title === 'string' && scene.title.trim() && scene.title.length <= 200, 'Scene 标题不能为空且不超过 200 字符');
       check(typeof scene.narration === 'string' && scene.narration.length <= 20000, '旁白文本无效或过长');
       check(typeof scene.video === 'string' && validVideo(scene.video), '视频地址必须为空或 http/https URL');
-      check(Array.isArray(scene.images ?? []) && (scene.images ?? []).length <= 50 && (scene.images ?? []).every(validImage), '图片地址必须为 http/https URL 或安全的相对路径，每个 Scene 最多 50 张图片');
       check(['next', 'end'].includes(scene.next) || ids.has(scene.next), `Scene ${scene.title} 的跳转目标不存在`);
       if (!scene.quiz) continue;
       const q = scene.quiz;
@@ -66,8 +62,6 @@
           id: String(scene.sceneUuid || `scene-${index + 1}`),
           title: interaction.title ?? scene.name ?? `Scene ${index + 1}`,
           video: interaction.videoUrl ?? asset?.assetLink ?? asset?.previewLink ?? '',
-          images: interaction.images ?? [...new Set(clips.filter(clip => clip.visible !== false).map(clip => assets[clip.assetUuid])
-            .filter(asset => asset?.mediaType === 'image').map(asset => asset.assetLink || asset.previewLink).filter(Boolean))],
           narration: interaction.narration ?? scene.transcript?.originalVoiceover ?? (scene.transcript?.sentences || []).map(s => s.content || '').join(' '),
           next: interaction.next ?? (index === project.scenes.length - 1 ? 'end' : 'next'),
           ...(interaction.quiz ? { quiz: structuredClone(interaction.quiz) } : {})
@@ -86,7 +80,7 @@
       const edited = course.scenes[index];
       check(String(scene.sceneUuid || `scene-${index + 1}`) === edited.id, 'PJSON Scene ID 不匹配');
       scene.sceneUuid ??= edited.id;
-      scene.training = { ...scene.training, title: edited.title, videoUrl: edited.video, images: structuredClone(edited.images ?? []), narration: edited.narration, next: edited.next };
+      scene.training = { ...scene.training, title: edited.title, videoUrl: edited.video, narration: edited.narration, next: edited.next };
       if (edited.quiz) scene.training.quiz = structuredClone(edited.quiz);
       else delete scene.training.quiz;
     });

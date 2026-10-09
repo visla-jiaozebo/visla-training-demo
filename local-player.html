@@ -120,8 +120,8 @@
     active = false;
     data = { ...committed };
     document.querySelector('#course').src = courseKey
-      ? `interactive-player.html?course=${encodeURIComponent(courseKey)}`
-      : 'interactive-player.html';
+      ? `interactive-player.html?course=${encodeURIComponent(courseKey)}&v=cappuccino-video-v1`
+      : 'interactive-player.html?v=cappuccino-video-v1';
     document.querySelector('#data').textContent = JSON.stringify(committed, null, 2);
   }
   document.querySelector('#relaunch').onclick = () => { closeCourse(); launch(); };

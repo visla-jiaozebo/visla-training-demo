@@ -5,9 +5,6 @@ header, .panel { background: white; border-radius: 14px; padding: 1.25rem; box-s
 header { margin-bottom: 1rem; }
 h1 { margin: 0 0 .35rem; font-size: 1.6rem; }
 #video { width: 100%; max-height: 62vh; background: #111; border-radius: 10px; }
-#images figure { margin: 0 0 1rem; }
-#images img { display: block; width: 100%; max-height: 62vh; object-fit: contain; border-radius: 10px; }
-#images figcaption { text-align: center; color: #62564f; font-size: .85rem; }
 .controls { display: flex; justify-content: space-between; align-items: center; gap: .75rem; margin-top: .75rem; }
 button { border: 0; border-radius: 8px; background: #6d3825; color: white; padding: .7rem 1rem; font: inherit; cursor: pointer; }
 button:disabled { opacity: .45; cursor: default; }
