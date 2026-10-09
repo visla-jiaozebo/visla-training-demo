@@ -1,6 +1,6 @@
 (() => {
   const $ = selector => document.querySelector(selector);
-  const draftKey = 'visla-cappuccino-editor-draft-v1';
+  const draftKey = 'visla-step-editor-draft-v1';
   let pjson, course, selected = 0;
   const message = text => { $('#status').textContent = text; };
   function targets(select, value, answer = false) {
@@ -129,7 +129,7 @@
   $('#fields').addEventListener('input', () => { if (course) { readFields(); list(); } });
   $('#quiz-type').addEventListener('change', () => { readFields(); options(); });
   action(async () => {
-    const response = await fetch('cappuccino/editor-pjson.json');
+    const response = await fetch('step/editor-pjson.json');
     if (!response.ok) throw new Error(`加载失败：HTTP ${response.status}`);
     pjson = TrainingCourse.preparePjson(await response.json());
     course = TrainingCourse.fromPjson(pjson);

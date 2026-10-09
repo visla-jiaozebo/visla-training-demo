@@ -71,7 +71,22 @@
     prev.disabled = history.length === 0;
     next.disabled = false;
     next.textContent = scene.next === 'end' ? 'Finish / Answer' : 'Next scene';
-    $('#media-status').textContent = scene.video ? '' : '此 Scene 没有视频，可阅读文本并点击 Next。';
+    $('#media-status').textContent = scene.video || scene.images?.length ? '' : '此 Scene 为文本步骤，可阅读后点击 Next。';
+    const images = $('#images');
+    images.replaceChildren();
+    (scene.images ?? []).forEach((url, index) => {
+      const figure = document.createElement('figure'), image = document.createElement('img');
+      image.alt = `${scene.title} · 图片 ${index + 1}`;
+      image.onerror = () => { if (scene === target) $('#media-status').textContent = '图片加载失败；仍可阅读文本并答题。'; };
+      image.src = url;
+      figure.append(image);
+      if (scene.images.length > 1) {
+        const caption = document.createElement('figcaption');
+        caption.textContent = `图片 ${index + 1} / ${scene.images.length}`;
+        figure.append(caption);
+      }
+      images.append(figure);
+    });
     video.hidden = !scene.video;
     video.onloadedmetadata = () => {
       if (time > 0 && Number.isFinite(video.duration)) video.currentTime = Math.min(time, video.duration);
@@ -162,7 +177,7 @@
     if (target) loadScene(target, true);
   };
   video.addEventListener('ended', () => { if (scene.quiz && !hasAnswer(scene.quiz) && !finished) showQuestion(scene.quiz); });
-  video.addEventListener('error', () => { $('#media-status').textContent = '视频加载失败；仍可阅读文本、点击 Next 并答题。'; });
+  video.addEventListener('error', () => { if (scene.video) $('#media-status').textContent = '视频加载失败；仍可阅读文本、点击 Next 并答题。'; });
   $('#retry').onclick = () => {
     answers = Object.create(null); history = []; finished = false;
     set('cmi.core.lesson_status', 'incomplete'); set('cmi.core.score.raw', 0);

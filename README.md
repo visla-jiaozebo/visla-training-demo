@@ -1,23 +1,23 @@
-# Cappuccino interactive editor
+# macOS 设置 · 交互编辑演示
 
-A small PJSON-based editor for quiz answers, branching, Scene jumps, preview, and SCORM 1.2 export.
+在线页面：https://visla-jiaozebo.github.io/visla-training-demo/
 
-Open the GitHub Pages site: https://visla-jiaozebo.github.io/visla-training-demo/
+使用 Step-to-video 的 macOS 教程 PJSON，编辑问题、正确答案、答案分支及 Scene 跳转。支持保存预览和 SCORM 1.2 导出。
 
-## Public demo data
+## 图片课程
 
-This repository contains only a deliberately simplified public PJSON example. Project, Scene, and question identifiers are demo identifiers. Original project data, account identifiers, signed URLs, stock videos, audio, and private documentation are not included.
+SCORM 的课程页面可以使用图片，不要求视频。本演示包含 8 个 Scene、8 张下载并脱敏的截图，以及 3 道示例题。开头、结尾是纯文本；两个合并 Scene 各显示两张图片。
 
-The demo is text-only. It retains lesson text and three knowledge checks. Editing and preview work in the browser; drafts are stored in that browser's localStorage, not shared with other users or uploaded to a backend.
+图片与页面一起托管，并一起打包进导出的 SCORM ZIP。播放和导出不依赖原来的 S3 签名链接。
 
-Use **保存并预览** to test the current flow and **导出 SCORM** to download the course package. The exported package contains the public PJSON and player files; it does not require this editor to run.
+截图中的用户名、设备序列号、设备名称和 Wi-Fi 名称已遮盖。公开 PJSON 使用演示标识，不包含原始账户信息、签名链接或语音资源。这里只展示截图和教学文本，不还原原项目的动画、点击标注或配音。
 
-## Local preview
+点击“保存并预览”检查路径；点击“导出 SCORM”下载包含当前编辑内容与图片的课程包。草稿只存在自己的浏览器中，不支持共享编辑。原卡布奇诺演示已由本教程替换。
+
+## 本地打开
 
 ```bash
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8765/ . Use localhost or HTTPS because the editor uses Web Crypto.
-
-The local Runtime player is a small test simulator, not a SCORM certification suite. Real target-platform behavior should be validated separately.
+打开 http://127.0.0.1:8765/ 。播放器内置本地 SCORM Runtime 模拟器；真实学习平台的兼容性仍需单独验证。

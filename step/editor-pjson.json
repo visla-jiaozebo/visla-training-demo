@@ -1,0 +1,277 @@
+{
+  "code": 0,
+  "msg": "SUCCESS",
+  "data": {
+    "projectUuid": "step-demo",
+    "training": {
+      "version": 1,
+      "title": "macOS：关于本机与 Wi-Fi 设置",
+      "passPercent": 67
+    },
+    "assets": {
+      "image-1": {
+        "assetUuid": "image-1",
+        "mediaType": "image",
+        "assetLink": "step/images/image-01.jpg"
+      },
+      "image-2": {
+        "assetUuid": "image-2",
+        "mediaType": "image",
+        "assetLink": "step/images/image-02.jpg"
+      },
+      "image-3": {
+        "assetUuid": "image-3",
+        "mediaType": "image",
+        "assetLink": "step/images/image-03.jpg"
+      },
+      "image-4": {
+        "assetUuid": "image-4",
+        "mediaType": "image",
+        "assetLink": "step/images/image-04.jpg"
+      },
+      "image-5": {
+        "assetUuid": "image-5",
+        "mediaType": "image",
+        "assetLink": "step/images/image-05.jpg"
+      },
+      "image-6": {
+        "assetUuid": "image-6",
+        "mediaType": "image",
+        "assetLink": "step/images/image-06.jpg"
+      },
+      "image-7": {
+        "assetUuid": "image-7",
+        "mediaType": "image",
+        "assetLink": "step/images/image-07.jpg"
+      },
+      "image-8": {
+        "assetUuid": "image-8",
+        "mediaType": "image",
+        "assetLink": "step/images/image-08.jpg"
+      }
+    },
+    "scenes": [
+      {
+        "sceneUuid": "scene-1",
+        "name": "Scene 1",
+        "duration": 14575,
+        "transcript": {
+          "originalVoiceover": "这段教程带你从桌面开始，打开“关于本机”，再进入系统设置里的 Wi‑Fi 页面。跟着一步步点，就能快速找到相关信息。"
+        },
+        "brolls": [],
+        "training": {
+          "title": "Scene 1 · 教程介绍",
+          "next": "next"
+        }
+      },
+      {
+        "sceneUuid": "scene-2",
+        "name": "Merged Scene 2",
+        "duration": 13462,
+        "transcript": {
+          "originalVoiceover": "在桌面空白处点一下，让桌面获得焦点并清除选中项。 再点一次桌面空白处，确认没有窗口或图标被选中。"
+        },
+        "brolls": [
+          {
+            "assetUuid": "image-1",
+            "visible": true,
+            "startTime": 0,
+            "endTime": 7350
+          },
+          {
+            "assetUuid": "image-2",
+            "visible": true,
+            "startTime": 0,
+            "endTime": 6112
+          }
+        ],
+        "training": {
+          "title": "Scene 2 · 桌面获得焦点",
+          "next": "next"
+        }
+      },
+      {
+        "sceneUuid": "scene-3",
+        "name": "Scene 5",
+        "duration": 6950,
+        "transcript": {
+          "originalVoiceover": "在 Apple 菜单里，点击“关于本机”，打开信息窗口。"
+        },
+        "brolls": [
+          {
+            "assetUuid": "image-3",
+            "visible": true,
+            "startTime": 0,
+            "endTime": 6950
+          }
+        ],
+        "training": {
+          "title": "Scene 3 · 打开关于本机",
+          "next": "next",
+          "quiz": {
+            "id": "question-3",
+            "title": "打开“关于本机”应选择哪一项？",
+            "graded": true,
+            "correct": 0,
+            "feedback": "",
+            "options": [
+              {
+                "text": "关于本机",
+                "target": "default"
+              },
+              {
+                "text": "系统设置",
+                "target": "default"
+              },
+              {
+                "text": "App Store",
+                "target": "default"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sceneUuid": "scene-4",
+        "name": "Scene 4",
+        "duration": 6838,
+        "transcript": {
+          "originalVoiceover": "到左上角菜单栏，点击苹果图标，打开 Apple 菜单。"
+        },
+        "brolls": [
+          {
+            "assetUuid": "image-4",
+            "visible": true,
+            "startTime": 0,
+            "endTime": 6838
+          }
+        ],
+        "training": {
+          "title": "Scene 4 · 打开 Apple 菜单",
+          "next": "next"
+        }
+      },
+      {
+        "sceneUuid": "scene-5",
+        "name": "Scene 6",
+        "duration": 8700,
+        "transcript": {
+          "originalVoiceover": "在“关于本机”窗口，点“更多信息…”，进入系统设置查看详细信息。"
+        },
+        "brolls": [
+          {
+            "assetUuid": "image-5",
+            "visible": true,
+            "startTime": 0,
+            "endTime": 8700
+          }
+        ],
+        "training": {
+          "title": "Scene 5 · 进入系统设置",
+          "next": "next",
+          "quiz": {
+            "id": "question-5",
+            "title": "从“关于本机”进入系统设置，应点击什么？",
+            "graded": true,
+            "correct": 0,
+            "feedback": "",
+            "options": [
+              {
+                "text": "更多信息…",
+                "target": "default"
+              },
+              {
+                "text": "红色关闭按钮",
+                "target": "default"
+              },
+              {
+                "text": "最小化按钮",
+                "target": "default"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sceneUuid": "scene-6",
+        "name": "Scene 7",
+        "duration": 7875,
+        "transcript": {
+          "originalVoiceover": "在系统设置左侧边栏，点击“Wi‑Fi”，查看网络与连接选项。"
+        },
+        "brolls": [
+          {
+            "assetUuid": "image-6",
+            "visible": true,
+            "startTime": 0,
+            "endTime": 7875
+          }
+        ],
+        "training": {
+          "title": "Scene 6 · 查看 Wi-Fi",
+          "next": "next",
+          "quiz": {
+            "id": "question-6",
+            "title": "在系统设置中，查看无线网络应选择哪一项？",
+            "graded": true,
+            "correct": 1,
+            "feedback": "",
+            "options": [
+              {
+                "text": "蓝牙",
+                "target": "default"
+              },
+              {
+                "text": "Wi-Fi",
+                "target": "default"
+              },
+              {
+                "text": "通用",
+                "target": "default"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sceneUuid": "scene-7",
+        "name": "Merged Scene 8",
+        "duration": 13900,
+        "transcript": {
+          "originalVoiceover": "完成后，点击系统设置左上角红色关闭按钮，关闭窗口。 最后点击“关于本机”左上角红色关闭按钮，回到桌面。"
+        },
+        "brolls": [
+          {
+            "assetUuid": "image-7",
+            "visible": true,
+            "startTime": 0,
+            "endTime": 6475
+          },
+          {
+            "assetUuid": "image-8",
+            "visible": true,
+            "startTime": 0,
+            "endTime": 7425
+          }
+        ],
+        "training": {
+          "title": "Scene 7 · 关闭窗口",
+          "next": "next"
+        }
+      },
+      {
+        "sceneUuid": "scene-8",
+        "name": "Scene 10",
+        "duration": 15200,
+        "transcript": {
+          "originalVoiceover": "现在你已经会从桌面打开“关于本机”，并跳转到系统设置的 Wi‑Fi 页面了。需要查看网络或设备信息时，就按这个流程操作。"
+        },
+        "brolls": [],
+        "training": {
+          "title": "Scene 8 · 教程完成",
+          "next": "end"
+        }
+      }
+    ]
+  }
+}
