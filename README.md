@@ -1,12 +1,12 @@
 # 卡布奇诺 · 交互编辑演示
 
-在线页面：https://visla-jiaozebo.github.io/visla-training-demo/?v=cappuccino-vo-v1
+在线页面：https://visla-jiaozebo.github.io/visla-training-demo/?v=cappuccino-vo-v2
 
 8 个 Scene、3 道示例题，支持问题和答案编辑、分支、Scene 跳转、保存预览及 SCORM 1.2 导出。
 
 ## B-roll + VO
 
-每个 Scene 展示 `brolls[0]`，同时播放 `voiceOvers[0]` 对应的原始旁白。VO 跟随视频播放、暂停、拖动及倍速；切换 Scene、答题和退出时停止。旁白有独立静音按钮。
+每个 Scene 展示 `brolls[0]`，同时播放 `voiceOvers[0]` 对应的原始旁白。VO 跟随视频播放、暂停、拖动及倍速；切换 Scene、答题和退出时停止。旁白跟随视频，不提供独立开关。
 
 原 PJSON 的旁白为一条连续 MP3，各 Scene 引用不同裁剪区间。原签名链接已失效，因此读取原 S3 音频，按区间切出 8 个 MP3，保存在 `cappuccino/audio/`。这些文件随页面托管，也随 SCORM 导出打包。没有重新生成或替换旁白内容。
 

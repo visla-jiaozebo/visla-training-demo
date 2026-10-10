@@ -9,7 +9,7 @@
       if (!saved) throw new Error('预览课程不存在，请回编辑器保存');
       course = TrainingCourse.fromPjson(TrainingCourse.preparePjson(JSON.parse(saved)));
     } else {
-      const response = await fetch('pjson.json?v=cappuccino-vo-v1');
+      const response = await fetch('pjson.json?v=cappuccino-vo-v2');
       if (!response.ok) throw new Error(`课程加载失败：HTTP ${response.status}`);
       course = TrainingCourse.fromPjson(await response.json());
     }
@@ -96,7 +96,6 @@
     video.hidden = !scene.video;
     video.volume = scene.videoVolume ?? 1;
     $('#voice-status').textContent = '';
-    $('#mute-voice').hidden = !scene.voiceOver;
     audio.onloadedmetadata = () => syncVoice(!video.paused);
     if (scene.voiceOver) { audio.src = scene.voiceOver.url; audio.volume = scene.voiceOver.volume; }
     else audio.removeAttribute('src');
@@ -216,11 +215,6 @@
   });
   audio.addEventListener('ended', () => { if (video.ended) endScene(); });
   audio.addEventListener('error', () => { if (scene.voiceOver) $('#voice-status').textContent = '旁白加载失败；视频和答题仍可继续。'; });
-  $('#mute-voice').onclick = () => {
-    audio.muted = !audio.muted;
-    $('#mute-voice').textContent = audio.muted ? '开启旁白' : '旁白静音';
-    $('#mute-voice').setAttribute('aria-pressed', String(audio.muted));
-  };
   video.addEventListener('error', () => { audio.pause(); $('#media-status').textContent = '视频加载失败；仍可阅读文本、点击 Next 并答题。'; });
   $('#retry').onclick = () => {
     answers = Object.create(null); history = []; finished = false;

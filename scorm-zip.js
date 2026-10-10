@@ -54,7 +54,7 @@
     const course = TrainingCourse.fromPjson(pjson);
     const resources = ['interactive-player.html', 'interactive-player.js', 'course-model.js', 'cappuccino/style.css'];
     const content = await Promise.all(resources.map(async path => {
-      const response = await fetch(path + '?v=cappuccino-vo-v1');
+      const response = await fetch(path + '?v=cappuccino-vo-v2');
       if (!response.ok) throw new Error(`无法加载导出资源 ${path}: HTTP ${response.status}`);
       return response.text();
     }));
