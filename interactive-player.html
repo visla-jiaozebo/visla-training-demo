@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Visla 交互课程</title>
-  <link rel="stylesheet" href="cappuccino/style.css?v=cappuccino-video-v1">
+  <link rel="stylesheet" href="cappuccino/style.css?v=cappuccino-vo-v1">
 </head>
 <body>
 <main>
@@ -16,7 +16,10 @@
   <section class="panel" aria-labelledby="scene-title">
     <h2 id="scene-title"></h2>
     <video id="video" controls playsinline preload="metadata" aria-label="课程视频"></video>
+    <audio id="voiceover" preload="metadata" hidden></audio>
     <p id="media-status" role="status"></p>
+    <p id="voice-status" role="status"></p>
+    <button id="mute-voice" type="button" hidden aria-pressed="false">旁白静音</button>
     <p id="narration"></p>
     <div class="controls">
       <button id="prev" type="button" disabled>Previous scene</button>
@@ -37,7 +40,7 @@
     <details><summary>播放事件</summary><pre id="events"></pre></details>
   </section>
 </main>
-<script src="course-model.js?v=cappuccino-video-v1"></script>
-<script src="interactive-player.js?v=cappuccino-video-v1"></script>
+<script src="course-model.js?v=cappuccino-vo-v1"></script>
+<script src="interactive-player.js?v=cappuccino-vo-v1"></script>
 </body>
 </html>

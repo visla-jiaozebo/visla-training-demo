@@ -9,7 +9,7 @@
       if (!saved) throw new Error('预览课程不存在，请回编辑器保存');
       course = TrainingCourse.fromPjson(TrainingCourse.preparePjson(JSON.parse(saved)));
     } else {
-      const response = await fetch('pjson.json?v=cappuccino-video-v1');
+      const response = await fetch('pjson.json?v=cappuccino-vo-v1');
       if (!response.ok) throw new Error(`课程加载失败：HTTP ${response.status}`);
       course = TrainingCourse.fromPjson(await response.json());
     }
@@ -33,7 +33,7 @@
   }
   let api = findAPI(window);
   if (!api) { try { api = findAPI(window.opener || window.top.opener); } catch (_) {} }
-  const video = $('#video'), next = $('#next'), prev = $('#prev'), quiz = $('#quiz');
+  const video = $('#video'), audio = $('#voiceover'), next = $('#next'), prev = $('#prev'), quiz = $('#quiz');
   const started = Date.now(), events = [];
   let active = false, scene = course.scenes[0], answers = Object.create(null), history = [], finished = false, currentQuestion = null;
   const hasAnswer = q => Object.hasOwn(answers, q.id);
@@ -53,14 +53,35 @@
   const set = (key, value) => { if (active) call('LMSSetValue', key, String(value)); };
   function save() {
     if (!active) return;
-    const state = JSON.stringify({ version: 1, revision, scene: scene.id, time: video.currentTime || 0, answers, history, finished });
+    const state = JSON.stringify({ version: 1, revision, scene: scene.id, time: Math.max(0, (video.currentTime || 0) - (scene.videoStart || 0)), answers, history, finished });
     if (state.length > 4096) { $('#lms-status').textContent = '恢复数据超过 SCORM 1.2 的 4096 字符预算，未保存；请缩小课程或路径状态。'; return; }
     set('cmi.core.lesson_location', scene.id);
     set('cmi.core.exit', finished ? '' : 'suspend');
     set('cmi.suspend_data', state);
     call('LMSCommit', '');
   }
+  function syncVoice(play = false) {
+    const voice = scene.voiceOver;
+    if (!voice || currentQuestion || finished) { audio.pause(); return; }
+    const time = voice.start + video.currentTime - (scene.videoStart || 0) - voice.offset;
+    if (time < voice.start || time >= voice.end) { audio.pause(); return; }
+    if (Math.abs(audio.currentTime - time) > .25) audio.currentTime = time;
+    audio.playbackRate = video.playbackRate;
+    if (play && audio.paused) {
+      const current = scene;
+      audio.play().catch(error => {
+        if (scene === current && error.name !== 'AbortError') $('#voice-status').textContent = '旁白未能播放，请点击视频播放按钮重试。';
+      });
+    }
+  }
+  function endScene() {
+    audio.pause();
+    video.pause();
+    if (scene.quiz && !hasAnswer(scene.quiz) && !finished) showQuestion(scene.quiz);
+  }
   function loadScene(target, autoplay = false, time = 0) {
+    audio.pause();
+    video.pause();
     scene = target;
     currentQuestion = null;
     quiz.hidden = true;
@@ -73,8 +94,17 @@
     next.textContent = scene.next === 'end' ? 'Finish / Answer' : 'Next scene';
     $('#media-status').textContent = scene.video ? '' : '此 Scene 没有视频，可阅读文本并点击 Next。';
     video.hidden = !scene.video;
+    video.volume = scene.videoVolume ?? 1;
+    $('#voice-status').textContent = '';
+    $('#mute-voice').hidden = !scene.voiceOver;
+    audio.onloadedmetadata = () => syncVoice(!video.paused);
+    if (scene.voiceOver) { audio.src = scene.voiceOver.url; audio.volume = scene.voiceOver.volume; }
+    else audio.removeAttribute('src');
+    audio.load();
     video.onloadedmetadata = () => {
-      if (time > 0 && Number.isFinite(video.duration)) video.currentTime = Math.min(time, video.duration);
+      const position = (scene.videoStart || 0) + time;
+      if (position > 0 && Number.isFinite(video.duration)) video.currentTime = Math.min(position, video.duration);
+      syncVoice(!video.paused);
     };
     if (scene.video) video.src = scene.video;
     else video.removeAttribute('src');
@@ -86,6 +116,7 @@
   function showQuestion(q) {
     if (currentQuestion || hasAnswer(q)) return;
     currentQuestion = q;
+    audio.pause();
     video.pause();
     quiz.hidden = false;
     next.disabled = true;
@@ -123,6 +154,7 @@
   }
   function showResult() {
     const outcome = TrainingCourse.result(course, answers);
+    audio.pause();
     video.pause();
     quiz.hidden = true;
     $('#result').hidden = false;
@@ -161,8 +193,35 @@
     const target = course.scenes.find(s => s.id === history.pop());
     if (target) loadScene(target, true);
   };
-  video.addEventListener('ended', () => { if (scene.quiz && !hasAnswer(scene.quiz) && !finished) showQuestion(scene.quiz); });
-  video.addEventListener('error', () => { $('#media-status').textContent = '视频加载失败；仍可阅读文本、点击 Next 并答题。'; });
+  video.addEventListener('play', () => syncVoice(true));
+  video.addEventListener('playing', () => syncVoice(true));
+  video.addEventListener('pause', () => { if (!video.ended) audio.pause(); });
+  video.addEventListener('waiting', () => audio.pause());
+  video.addEventListener('seeking', () => audio.pause());
+  video.addEventListener('seeked', () => syncVoice(!video.paused));
+  video.addEventListener('ratechange', () => { audio.playbackRate = video.playbackRate; });
+  video.addEventListener('timeupdate', () => {
+    if (scene.duration > 0 && video.currentTime - (scene.videoStart || 0) >= scene.duration) endScene();
+    else if (!video.seeking) syncVoice(!video.paused);
+  });
+  video.addEventListener('ended', () => {
+    if (scene.voiceOver && !audio.paused && audio.currentTime < scene.voiceOver.end) return;
+    endScene();
+  });
+  audio.addEventListener('timeupdate', () => {
+    if (scene.voiceOver && audio.currentTime >= scene.voiceOver.end) {
+      audio.pause();
+      if (video.ended) endScene();
+    }
+  });
+  audio.addEventListener('ended', () => { if (video.ended) endScene(); });
+  audio.addEventListener('error', () => { if (scene.voiceOver) $('#voice-status').textContent = '旁白加载失败；视频和答题仍可继续。'; });
+  $('#mute-voice').onclick = () => {
+    audio.muted = !audio.muted;
+    $('#mute-voice').textContent = audio.muted ? '开启旁白' : '旁白静音';
+    $('#mute-voice').setAttribute('aria-pressed', String(audio.muted));
+  };
+  video.addEventListener('error', () => { audio.pause(); $('#media-status').textContent = '视频加载失败；仍可阅读文本、点击 Next 并答题。'; });
   $('#retry').onclick = () => {
     answers = Object.create(null); history = []; finished = false;
     set('cmi.core.lesson_status', 'incomplete'); set('cmi.core.score.raw', 0);
@@ -198,8 +257,9 @@
   loadScene(scene, false, resumeTime);
   if (finished) showResult();
   function exit() {
-    if (!active) return;
+    audio.pause();
     video.pause();
+    if (!active) return;
     const seconds = Math.floor((Date.now() - started) / 1000), pad = n => String(n).padStart(2, '0');
     set('cmi.core.session_time', `${String(Math.floor(seconds / 3600)).padStart(4, '0')}:${pad(Math.floor(seconds / 60) % 60)}:${pad(seconds % 60)}`);
     save(); call('LMSFinish', ''); active = false;

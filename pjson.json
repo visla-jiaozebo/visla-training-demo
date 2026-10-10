@@ -559,7 +559,14 @@
           "title": "Scene 1",
           "videoUrl": "https://media.gettyimages.com/id/2022716167/video/a-cappuccino-cup-placed-on-a-saucer-in-a-cozy-cafe-setting.mp4?b=1&s=mp4-640x640-gi&k=20&c=5uBL2xIVCKT0pmSPHdOUaJKA1xuADbYRs5iBwU2nhFQ=",
           "narration": "Most cappuccinos fail in the milk. Fix that, and everything gets easier. A cappuccino is all about balance.",
-          "next": "next"
+          "next": "next",
+          "voiceOver": {
+            "url": "cappuccino/audio/scene-01.mp3",
+            "start": 0,
+            "end": 7.087,
+            "offset": 0,
+            "volume": 1
+          }
         }
       },
       {
@@ -1001,7 +1008,14 @@
           "title": "Scene 2",
           "videoUrl": "https://media.gettyimages.com/id/973116484/video/process-of-making-cappucino.mp4?b=1&s=mp4-640x640-gi&k=20&c=ipb6JDNJet5J6JAffARqGOw9tIdPD5CfUZ0Naz0JS1o=",
           "narration": "Start with a fresh dose of coffee beans. Grind fine, but not powdery.",
-          "next": "next"
+          "next": "next",
+          "voiceOver": {
+            "url": "cappuccino/audio/scene-02.mp3",
+            "start": 0,
+            "end": 4.273,
+            "offset": 0,
+            "volume": 1
+          }
         }
       },
       {
@@ -1668,6 +1682,13 @@
                 "target": "default"
               }
             ]
+          },
+          "voiceOver": {
+            "url": "cappuccino/audio/scene-03.mp3",
+            "start": 0,
+            "end": 10.25,
+            "offset": 0,
+            "volume": 1
           }
         }
       },
@@ -2236,7 +2257,14 @@
           "title": "Scene 4",
           "videoUrl": "https://media.gettyimages.com/id/959667322/video/process-of-making-cappuccino.mp4?b=1&s=mp4-640x640-gi&k=20&c=SDzvzwtsG-0_VAJgxSJUwhAvgvPVx9mUoQx6qak9XWc=",
           "narration": "Now steam the milk. Add a little air at first, then keep it spinning until it turns glossy and smooth, like wet paint.",
-          "next": "next"
+          "next": "next",
+          "voiceOver": {
+            "url": "cappuccino/audio/scene-04.mp3",
+            "start": 0,
+            "end": 6.91,
+            "offset": 0,
+            "volume": 1
+          }
         }
       },
       {
@@ -2647,6 +2675,13 @@
                 "target": "default"
               }
             ]
+          },
+          "voiceOver": {
+            "url": "cappuccino/audio/scene-05.mp3",
+            "start": 0,
+            "end": 5.117000000000001,
+            "offset": 0,
+            "volume": 1
           }
         }
       },
@@ -3154,7 +3189,14 @@
           "title": "Scene 6",
           "videoUrl": "https://media.gettyimages.com/id/1253132515/video/pouring-a-cappuccino.mp4?b=1&s=mp4-640x640-gi&k=20&c=uOdVO6kzxKs9VI8A6ONgEDwDdCi1AHbHCFkHyc5YT2M=",
           "narration": "Start high to blend the milk and espresso, then lower the pitcher to finish with a soft layer of foam.",
-          "next": "next"
+          "next": "next",
+          "voiceOver": {
+            "url": "cappuccino/audio/scene-06.mp3",
+            "start": 0,
+            "end": 5.704999999999998,
+            "offset": 0,
+            "volume": 1
+          }
         }
       },
       {
@@ -3712,6 +3754,13 @@
                 "target": "default"
               }
             ]
+          },
+          "voiceOver": {
+            "url": "cappuccino/audio/scene-07.mp3",
+            "start": 0,
+            "end": 5.9680000000000035,
+            "offset": 0,
+            "volume": 1
           }
         }
       },
@@ -4053,7 +4102,14 @@
           "title": "Scene 8",
           "videoUrl": "https://media.gettyimages.com/id/1354721431/video/making-cappuccino-closeup.mp4?b=1&s=mp4-640x640-gi&k=20&c=ywB7NTC8sZkqznXc_gJI2k9N6aHvJaTkUlqEnMJPXng=",
           "narration": "That’s cappuccino, every time.",
-          "next": "end"
+          "next": "end",
+          "voiceOver": {
+            "url": "cappuccino/audio/scene-08.mp3",
+            "start": 0,
+            "end": 2.2579999999999956,
+            "offset": 0,
+            "volume": 1
+          }
         }
       }
     ],

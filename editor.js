@@ -90,7 +90,7 @@
     localStorage.setItem(draftKey, json);
     $('#preview').contentWindow?.document.querySelector('#course')?.contentWindow?.dispatchEvent(new Event('pagehide'));
     localStorage.removeItem(`visla-cappuccino-scorm12-local:${key}`);
-    $('#preview').src = `local-player.html?compact=1&course=${encodeURIComponent(key)}&v=cappuccino-video-v1`;
+    $('#preview').src = `local-player.html?compact=1&course=${encodeURIComponent(key)}&v=cappuccino-vo-v1`;
   }
   async function action(fn) {
     try { await fn(); } catch (error) { message(error.message); }
@@ -129,7 +129,7 @@
   $('#fields').addEventListener('input', () => { if (course) { readFields(); list(); } });
   $('#quiz-type').addEventListener('change', () => { readFields(); options(); });
   action(async () => {
-    const response = await fetch('cappuccino/editor-pjson.json?v=cappuccino-video-v1');
+    const response = await fetch('cappuccino/editor-pjson.json?v=cappuccino-vo-v1');
     if (!response.ok) throw new Error(`加载失败：HTTP ${response.status}`);
     pjson = TrainingCourse.preparePjson(await response.json());
     course = TrainingCourse.fromPjson(pjson);

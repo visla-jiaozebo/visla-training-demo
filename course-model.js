@@ -6,6 +6,9 @@
     if (value === '') return true;
     try { return ['https:', 'http:'].includes(new URL(value).protocol); } catch (_) { return false; }
   }
+  function validAudio(value) {
+    return typeof value === 'string' && value !== '' && (validVideo(value) || /^(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_-]+\.(?:mp3|m4a|wav|ogg)$/i.test(value));
+  }
   function validate(course) {
     check(isObject(course) && course.version === 1, '不支持的课程格式，要求 version=1');
     check(validId(course.id), '课程 ID 无效');
@@ -21,6 +24,14 @@
       check(typeof scene.title === 'string' && scene.title.trim() && scene.title.length <= 200, 'Scene 标题不能为空且不超过 200 字符');
       check(typeof scene.narration === 'string' && scene.narration.length <= 20000, '旁白文本无效或过长');
       check(typeof scene.video === 'string' && validVideo(scene.video), '视频地址必须为空或 http/https URL');
+      for (const field of ['videoStart', 'duration']) check(scene[field] === undefined || (Number.isFinite(scene[field]) && scene[field] >= 0), '素材时间无效');
+      check(scene.videoVolume === undefined || (Number.isFinite(scene.videoVolume) && scene.videoVolume >= 0 && scene.videoVolume <= 1), '视频音量无效');
+      if (scene.voiceOver) {
+        const v = scene.voiceOver;
+        check(isObject(v) && validAudio(v.url), '旁白地址无效');
+        check(Number.isFinite(v.start) && v.start >= 0 && Number.isFinite(v.end) && v.end > v.start && Number.isFinite(v.offset) && v.offset >= 0, '旁白时间无效');
+        check(Number.isFinite(v.volume) && v.volume >= 0 && v.volume <= 1, '旁白音量无效');
+      }
       check(['next', 'end'].includes(scene.next) || ids.has(scene.next), `Scene ${scene.title} 的跳转目标不存在`);
       if (!scene.quiz) continue;
       const q = scene.quiz;
@@ -56,12 +67,20 @@
       scenes: project.scenes.map((scene, index) => {
         const interaction = scene.training || {};
         check(isObject(interaction), 'Scene training 必须是对象');
-        const clips = [...(scene.brolls || []), ...(scene.arolls || [])];
-        const asset = clips.map(clip => assets[clip.assetUuid]).find(asset => asset?.mediaType === 'video');
+        const clip = scene.brolls?.[0], asset = assets[clip?.assetUuid];
+        const voice = scene.voiceOvers?.[0], voiceAsset = assets[voice?.assetUuid];
+        const voiceUrl = voice?.audioLink || voiceAsset?.audioLink || voiceAsset?.assetLink;
         return {
           id: String(scene.sceneUuid || `scene-${index + 1}`),
           title: interaction.title ?? scene.name ?? `Scene ${index + 1}`,
-          video: interaction.videoUrl ?? asset?.assetLink ?? asset?.previewLink ?? '',
+          video: interaction.videoUrl ?? (asset?.mediaType === 'video' ? asset.assetLink || asset.previewLink || '' : ''),
+          videoStart: interaction.videoStart ?? (clip?.startTime || 0) / 1000,
+          videoVolume: interaction.videoVolume ?? clip?.volume ?? 1,
+          duration: interaction.duration ?? (scene.duration || 0) / 1000,
+          voiceOver: interaction.voiceOver !== undefined ? structuredClone(interaction.voiceOver) : voiceUrl ? {
+            url: voiceUrl, start: (voice.startTime || 0) / 1000, end: (voice.endTime ?? voiceAsset?.duration ?? 0) / 1000,
+            offset: Math.max(0, ((voice.timeOffsetInProject || 0) - (scene.timeOffsetInProject || 0)) / 1000), volume: voice.volume ?? 1
+          } : null,
           narration: interaction.narration ?? scene.transcript?.originalVoiceover ?? (scene.transcript?.sentences || []).map(s => s.content || '').join(' '),
           next: interaction.next ?? (index === project.scenes.length - 1 ? 'end' : 'next'),
           ...(interaction.quiz ? { quiz: structuredClone(interaction.quiz) } : {})
@@ -80,7 +99,8 @@
       const edited = course.scenes[index];
       check(String(scene.sceneUuid || `scene-${index + 1}`) === edited.id, 'PJSON Scene ID 不匹配');
       scene.sceneUuid ??= edited.id;
-      scene.training = { ...scene.training, title: edited.title, videoUrl: edited.video, narration: edited.narration, next: edited.next };
+      scene.training = { ...scene.training, title: edited.title, videoUrl: edited.video, narration: edited.narration, next: edited.next,
+        videoStart: edited.videoStart ?? 0, videoVolume: edited.videoVolume ?? 1, duration: edited.duration ?? 0, voiceOver: structuredClone(edited.voiceOver ?? null) };
       if (edited.quiz) scene.training.quiz = structuredClone(edited.quiz);
       else delete scene.training.quiz;
     });
